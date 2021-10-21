@@ -1,0 +1,139 @@
+avatar-size = 180px
+max-details-width = 340px
+
+min-width-for-full-grid = 1200px
+min-width-for-fat-card = 640px
+
+#vorstand
+    padding-top 30px
+    padding-bottom 30px
+    text-align: left
+
+#vorstand-cards-block
+    padding 80px 0
+    display grid
+    grid-template-columns: 1fr 1fr
+    column-gap: 50px
+    row-gap: 50px
+
+    .vorstand-card:nth-child(1) 
+        order: 1
+    .vorstand-card:nth-child(2)
+        order: 3;
+    .vorstand-card:nth-child(3)
+        order: 5;
+    .vorstand-card:nth-child(4)
+        order: 2;
+    .vorstand-card:nth-child(5)
+        order: 4;
+    .vorstand-card:nth-child(6)
+        order: 6;
+
+    .vorstand-card
+        display flex
+
+        .vorstand-card-picture
+            flex-shrink: 0
+            img
+                background-color white
+                border-radius: 50%
+                width: avatar-size
+                height: avatar-size
+                margin 0 45px
+
+        .vorstand-card-details
+            max-width: max-details-width
+            p
+                font-size 11pt
+            h2
+                text-transform: uppercase
+                font-size: 12pt
+                font-weight: bold
+            .name
+                text-decoration: underline
+                text-underline-offset: 3px
+                margin-bottom 15px
+            .address
+                margin-bottom 15px
+
+/*==========================================================
+Responsive Stuff
+==========================================================*/
+@media screen and (max-width: min-width-for-full-grid)
+    #vorstand-cards-block
+        grid-template-columns: 1fr
+
+@media screen and (max-width: min-width-for-fat-card)
+    #vorstand-cards-block
+        .vorstand-card
+            flex-direction: column
+            text-align center
+            .vorstand-card-details
+                margin auto
+                padding 0 15px
+                padding-top 30px
+
+        .vorstand-card:nth-child(1) 
+            order: 1
+        .vorstand-card:nth-child(2)
+            order: 2;
+        .vorstand-card:nth-child(3)
+            order: 3;
+        .vorstand-card:nth-child(4)
+            order: 4;
+        .vorstand-card:nth-child(5)
+            order: 5;
+        .vorstand-card:nth-child(6)
+            order: 6;
+
+
+//aboutme styles
+/*==========================================================
+Variables to tweak the style
+==========================================================*/
+aboutme-spacing = 60px
+
+avatar-picture-width = 300px
+avatar-picture-height = 360px
+avatar-to-text-gap = 40px
+
+separator-line-width = 3px
+
+min-width-for-row = 750px
+general-to-self-description-gap = 0px
+
+/*==========================================================
+Serious Stuff
+==========================================================*/
+max-text-width = max-content-width - avatar-picture-width - avatar-to-text-gap
+
+#aboutme
+    display flex
+    padding-top aboutme-spacing
+    padding-bottom aboutme-spacing
+    border-bottom solid separator-line-width cd-hellgrau
+
+    #avatar-picture
+        flex-shrink 0
+        background-color black
+        background-image url("/img/avatar.jpg")
+        background-position center
+        background-size: cover
+        width: avatar-picture-width
+        min-height: avatar-picture-height
+        margin-right: avatar-to-text-gap
+    
+/*==========================================================
+Responsive Stuff
+==========================================================*/
+@media screen and (max-width: min-width-for-row)
+    #aboutme
+        flex-direction: column
+
+        #avatar-picture
+            margin auto
+            margin-bottom avatar-to-text-gap
+        #aboutme-text
+            margin auto
+            p
+                text-align center
