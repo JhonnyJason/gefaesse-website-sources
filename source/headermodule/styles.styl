@@ -3,10 +3,19 @@ header-padding = 20px
 
 // header styles
 header
-    position relative
     background-color cd-darkbackground
 nav
+    position fixed
+    top 0
+    width 100%
     padding header-padding header-padding 0 header-padding
+    box-sizing: border-box
+    background-color cd-darkbackground
+    z-index 2
+    transition transform 0.5s
+    
+.small-nav
+    transform translateY(-140px)
 
 #logo
     margin auto
@@ -72,6 +81,7 @@ nav
     // text-align: right
 
 #banner-image
+    margin-top: 200px
     z-index: 1
     position relative
     width 100%

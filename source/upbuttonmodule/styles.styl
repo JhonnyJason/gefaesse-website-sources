@@ -1,0 +1,21 @@
+// upbutton styles
+button-size = 50px
+
+#upbutton
+    position fixed
+    bottom 0
+    left 50%
+    color white
+    background-color #707993
+    transform translate(-50%, 102%) rotate(90deg)
+    transition transform 0.5s
+    width button-size
+    height button-size
+    padding 10px
+    box-sizing: border-box
+    border-radius: 5px
+    cursor pointer
+
+#upbutton.here
+    transform translate(-50%, -50px) rotate(90deg)
+ 
