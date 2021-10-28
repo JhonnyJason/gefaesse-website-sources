@@ -19,24 +19,31 @@ footer
     
     address
         @extends p
+
 #bottom-line
     padding 30px 0
+
+#bottom-line > .max-content
     display flex
     justify-content: space-between
+    flex-direction: row
+
 #bottom-line-left
     text-align: left
     text-decoration: underline
     p
         font-size 11pt
+
 #bottom-line-right
     text-align: right
+
 #bottom-line-underline
     height 15px
     width 100%
     background-color cd-dark
 
 @media screen and (max-width: max-width-for-mobile)
-    #bottom-line
+    #bottom-line > .max-content
         flex-direction: column
         margin-bottom 100px
 

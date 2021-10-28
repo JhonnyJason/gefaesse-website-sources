@@ -12,6 +12,9 @@ print = (arg) -> console.log(arg)
 upButton = null
 v = null
 
+tappedOegia = false
+oegiaLinkExpanded = false
+
 ############################################################
 headermodule.initialize = ->
     log "headermodule.initialize"
@@ -24,6 +27,10 @@ headermodule.initialize = ->
     sektionenLink.addEventListener("click", scrollToSektionen)
     ehrungenLink.addEventListener("click", scrollToEhrungen)
     beitrittLink.addEventListener("click", scrollToBeitritt)
+    
+    anchorTagOgiaLink = ogiaLink.getElementsByTagName("a")[0]
+    anchorTagOgiaLink.addEventListener("touchstart", onTapOegia)
+    anchorTagOgiaLink.addEventListener("click", onClickOegia)
 
     menuOpenButton.addEventListener("click", openMenu)
     menuCloseButton.addEventListener("click", closeMenu)
@@ -34,6 +41,11 @@ headermodule.initialize = ->
 #region  EventListeners
 weScrolled = ->
     offset = window.scrollY
+
+    tappedOegia = false
+    if oegiaLinkExpanded
+        ogiaLink.classList.remove("tapped")
+        oegiaLinkExpanded = false
     
     if offset > 110
         headermenu.classList.add("small-nav")
@@ -67,28 +79,44 @@ closeMenu = ->
     return
 
 ############################################################
+onTapOegia = ->
+    log "tapped"
+    tappedOegia = true
+    return
+
+onClickOegia = (evt) ->
+    log "clicked"
+    log tappedOegia
+    if tappedOegia and !oegiaLinkExpanded
+        evt.preventDefault()
+        oegiaLinkExpanded = true
+        ogiaLink.classList.add("tapped")
+        return false
+    return true
+
+############################################################
 scrollToZiele = ->
-    offset = ziele.offsetTop
+    offset = ziele.offsetTop - 50
     v.scrollTo(offset)
     return
 
 scrollToVorstand = ->
-    offset = vorstand.offsetTop
+    offset = vorstand.offsetTop - 50
     v.scrollTo(offset)
     return
 
 scrollToSektionen = ->
-    offset = sektionen.offsetTop
+    offset = sektionen.offsetTop - 50
     v.scrollTo(offset)
     return
 
 scrollToEhrungen = ->
-    offset = ehrungen.offsetTop
+    offset = ehrungen.offsetTop - 50
     v.scrollTo(offset)
     return
 
 scrollToBeitritt = ->
-    offset = beitritt.offsetTop
+    offset = beitritt.offsetTop - 50
     v.scrollTo(offset)
     return
 

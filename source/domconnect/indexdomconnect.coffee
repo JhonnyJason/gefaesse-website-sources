@@ -9,6 +9,7 @@ indexdomconnect.initialize = () ->
     global.vorstand = document.getElementById("vorstand")
     global.ziele = document.getElementById("ziele")
     global.headermenu = document.getElementById("headermenu")
+    global.ogiaLink = document.getElementById("ogia-link")
     global.zieleLink = document.getElementById("ziele-link")
     global.vorstandLink = document.getElementById("vorstand-link")
     global.sektionenLink = document.getElementById("sektionen-link")
