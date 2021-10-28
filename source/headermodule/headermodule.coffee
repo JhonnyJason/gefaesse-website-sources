@@ -11,6 +11,7 @@ print = (arg) -> console.log(arg)
 
 upButton = null
 v = null
+
 ############################################################
 headermodule.initialize = ->
     log "headermodule.initialize"
@@ -24,7 +25,8 @@ headermodule.initialize = ->
     ehrungenLink.addEventListener("click", scrollToEhrungen)
     beitrittLink.addEventListener("click", scrollToBeitritt)
 
-
+    menuOpenButton.addEventListener("click", openMenu)
+    menuCloseButton.addEventListener("click", closeMenu)
     weScrolled()
     return
     
@@ -33,12 +35,35 @@ headermodule.initialize = ->
 weScrolled = ->
     offset = window.scrollY
     
-    if offset > 110 then headermenu.classList.add("small-nav")
-    else headermenu.classList.remove("small-nav")
+    if offset > 110
+        headermenu.classList.add("small-nav")
+        headermenu.classList.remove("big-nav")
+        headermenu.classList.remove("menu-open")
+        headermenu.classList.add("menu-closed")
+    else 
+        headermenu.classList.remove("small-nav")
+        headermenu.classList.remove("big-nav")
+        headermenu.classList.add("menu-open")
+        headermenu.classList.remove("menu-closed")
     
     if offset > 500 then upButton.show()
     else upButton.hide()
     
+    return
+
+############################################################
+openMenu = ->
+    headermenu.classList.add("menu-open")
+    headermenu.classList.remove("menu-closed")
+    headermenu.classList.add("big-nav")
+    headermenu.classList.remove("small-nav")
+    return
+
+closeMenu = ->
+    headermenu.classList.add("menu-closed")
+    headermenu.classList.remove("menu-open")
+    headermenu.classList.add("small-nav")
+    headermenu.classList.remove("big-nav")
     return
 
 ############################################################

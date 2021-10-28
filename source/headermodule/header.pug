@@ -1,6 +1,6 @@
 //- header structure
 header
-    nav#headermenu
+    nav#headermenu.menu-open
         #fa-links
             a(href="/fa.html") FA Prüfung
             br
@@ -29,5 +29,10 @@ header
                 a(href="/links.html") Links
             #kontakt-link.menu-link
                 a(href="#kontakt") Kontakt
+        #menu-buttons-row 
+            svg#menu-open-button(): use(href="#svg-menu-icon")
+            svg#menu-close-button(): use(href="#svg-cross-icon")
+    #mobile-logo-row
+        #mobile-logo
     #banner-image
         p#image-credits

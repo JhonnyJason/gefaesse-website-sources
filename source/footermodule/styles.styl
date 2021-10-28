@@ -1,4 +1,6 @@
 // footer styles
+max-width-for-mobile = 700px
+
 footer
     background-color cd-foreground
     color cd-background
@@ -32,3 +34,11 @@ footer
     height 15px
     width 100%
     background-color cd-dark
+
+@media screen and (max-width: max-width-for-mobile)
+    #bottom-line
+        flex-direction: column
+        margin-bottom 100px
+
+    #bottom-line-right
+        margin-top 50px

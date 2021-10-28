@@ -14,6 +14,8 @@ indexdomconnect.initialize = () ->
     global.sektionenLink = document.getElementById("sektionen-link")
     global.ehrungenLink = document.getElementById("ehrungen-link")
     global.beitrittLink = document.getElementById("beitritt-link")
+    global.menuOpenButton = document.getElementById("menu-open-button")
+    global.menuCloseButton = document.getElementById("menu-close-button")
     return
     
 module.exports = indexdomconnect

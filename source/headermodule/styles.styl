@@ -1,5 +1,8 @@
 logo-size = 120px
 header-padding = 20px
+menu-button-size = 30px
+
+max-width-for-mobile = 700px
 
 // header styles
 header
@@ -17,11 +20,15 @@ nav
 .small-nav
     transform translateY(-140px)
 
-#logo
+#logo,
+#mobile-logo
     margin auto
     width logo-size
     height logo-size
     background-color black
+
+#mobile-logo-row
+    display none
 
 #fa-links
     position absolute 
@@ -29,6 +36,13 @@ nav
     right header-padding
     text-align: right
     text-decoration: underline
+
+#menu-open-button,
+#menu-close-button
+    width menu-button-size
+    height menu-button-size
+    padding 5px
+    display none
 
 #menu-row
     position relative
@@ -68,18 +82,6 @@ nav
     #ogia-submenu.submenu
         display: flex
 
-// #ogia-link
-//     min-width 50px
-// #termine-link
-//     min-width 215px
-// #auskunft-link
-//     min-width 210px
-// #links-link
-//     min-width 60px
-// #kontakt-link
-//     min-width 90px
-    // text-align: right
-
 #banner-image
     margin-top: 200px
     z-index: 1
@@ -87,9 +89,76 @@ nav
     width 100%
     height 420px
     background-color black
+
 #image-credits
     position absolute
     left 10px
     bottom 10px
 #image-credits:after
     content: "Sample Credit"
+
+
+@media screen and (max-width: max-width-for-mobile)
+    .big-nav
+        transform translateY(-192px)
+
+    .small-nav
+        transform translateY(-567px)
+
+    #logo-row
+        margin-bottom 52px
+    
+    #fa-links
+        top header-padding + 20px + logo-size
+    
+    .menu-open
+        #menu-close-button
+            display block
+    .menu-closed
+        #menu-open-button
+            display block
+
+    #menu-row
+        flex-direction: column
+        text-align: left
+        .submenu
+            margin-top 5px
+            position static
+
+
+
+        // .menu-link
+        //     position relative
+        //     font-size 14pt
+        //     cursor pointer
+        //     padding-bottom header-padding
+        // .menu-link:hover > a
+        //     color cd-flash
+        // .submenu-link
+        //     transition background 0.3s
+        //     font-size 11pt
+        //     background-color white
+        //     padding 7px
+        //     margin-top 3px
+        //     min-width 150px
+        //     text-align: left
+        // .submenu-link:hover
+        //     background-color cd-darkbackground
+        //     cursor pointer
+
+    #ogia-submenu.submenu
+        display: flex
+
+    #mobile-logo-row
+        margin-top 100px
+        padding-bottom 20px
+        display block
+        background-color cd-background
+        
+    #banner-image
+        margin-top: 0
+        z-index: 1
+        position relative
+        width 100%
+        height 420px
+        background-color black
