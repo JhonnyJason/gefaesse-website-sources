@@ -12,8 +12,9 @@ print = (arg) -> console.log(arg)
 upButton = null
 v = null
 
-tappedOegia = false
-oegiaLinkExpanded = false
+isMouse = false
+isTouchscreen = false
+ogiaLinkExpanded = false
 
 ############################################################
 headermodule.initialize = ->
@@ -27,10 +28,15 @@ headermodule.initialize = ->
     sektionenLink.addEventListener("click", scrollToSektionen)
     ehrungenLink.addEventListener("click", scrollToEhrungen)
     beitrittLink.addEventListener("click", scrollToBeitritt)
-    
+
+    # document.addEventListener("mousemove", mouseMoved)
+    # ogiaLink.addEventListener("mouseenter", )
+
+    document.body.addEventListener("touchstart", () -> return)
+
     anchorTagOgiaLink = ogiaLink.getElementsByTagName("a")[0]
-    anchorTagOgiaLink.addEventListener("touchstart", onTapOegia)
-    anchorTagOgiaLink.addEventListener("click", onClickOegia)
+    anchorTagOgiaLink.addEventListener("touchstart", touchedOgiaLink)
+    anchorTagOgiaLink.addEventListener("click", clickedOgiaLink)
 
     menuOpenButton.addEventListener("click", openMenu)
     menuCloseButton.addEventListener("click", closeMenu)
@@ -42,10 +48,9 @@ headermodule.initialize = ->
 weScrolled = ->
     offset = window.scrollY
 
-    tappedOegia = false
-    if oegiaLinkExpanded
+    if ogiaLinkExpanded
+        ogiaLinkExpanded = false
         ogiaLink.classList.remove("tapped")
-        oegiaLinkExpanded = false
     
     if offset > 110
         headermenu.classList.add("small-nav")
@@ -79,19 +84,26 @@ closeMenu = ->
     return
 
 ############################################################
-onTapOegia = ->
-    log "tapped"
-    tappedOegia = true
+mouseMoved = ->
+    log "mouseMoved!"
+    # isMouse = true
     return
 
-onClickOegia = (evt) ->
-    log "clicked"
-    log tappedOegia
-    if tappedOegia and !oegiaLinkExpanded
+touchedOgiaLink = ->
+    log "touched!"
+    isTouchscreen = true
+    return
+
+clickedOgiaLink = (evt) ->
+    log "clickedOgiaLink"
+    # if (!isMouse or isTouchscreen) and !oegiaLinkExpanded
+    if isTouchscreen and !ogiaLinkExpanded
         evt.preventDefault()
-        oegiaLinkExpanded = true
+        ogiaLinkExpanded = true
         ogiaLink.classList.add("tapped")
-        return false
+        return true
+    # evt.preventDefault()
+    # return false
     return true
 
 ############################################################
