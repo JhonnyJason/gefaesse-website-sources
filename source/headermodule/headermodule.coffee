@@ -12,7 +12,6 @@ print = (arg) -> console.log(arg)
 upButton = null
 v = null
 
-isMouse = false
 isTouchscreen = false
 ogiaLinkExpanded = false
 
@@ -28,12 +27,10 @@ headermodule.initialize = ->
     sektionenLink.addEventListener("click", scrollToSektionen)
     ehrungenLink.addEventListener("click", scrollToEhrungen)
     beitrittLink.addEventListener("click", scrollToBeitritt)
+    kontaktLink.addEventListener("click", scrollToKontakt)
 
-    # document.addEventListener("mousemove", mouseMoved)
-    # ogiaLink.addEventListener("mouseenter", )
-
+    # Fix to get the touchstart event.
     document.body.addEventListener("touchstart", () -> return)
-
     anchorTagOgiaLink = ogiaLink.getElementsByTagName("a")[0]
     anchorTagOgiaLink.addEventListener("touchstart", touchedOgiaLink)
     anchorTagOgiaLink.addEventListener("click", clickedOgiaLink)
@@ -51,7 +48,9 @@ weScrolled = ->
     if ogiaLinkExpanded
         ogiaLinkExpanded = false
         ogiaLink.classList.remove("tapped")
-    
+        # blur to get rid off :hover state
+        ogiaLink.blur()
+
     if offset > 110
         headermenu.classList.add("small-nav")
         headermenu.classList.remove("big-nav")
@@ -84,26 +83,16 @@ closeMenu = ->
     return
 
 ############################################################
-mouseMoved = ->
-    log "mouseMoved!"
-    # isMouse = true
-    return
-
 touchedOgiaLink = ->
-    log "touched!"
     isTouchscreen = true
-    return
+    return true
 
 clickedOgiaLink = (evt) ->
-    log "clickedOgiaLink"
-    # if (!isMouse or isTouchscreen) and !oegiaLinkExpanded
     if isTouchscreen and !ogiaLinkExpanded
         evt.preventDefault()
         ogiaLinkExpanded = true
         ogiaLink.classList.add("tapped")
         return true
-    # evt.preventDefault()
-    # return false
     return true
 
 ############################################################
@@ -130,6 +119,18 @@ scrollToEhrungen = ->
 scrollToBeitritt = ->
     offset = beitritt.offsetTop - 50
     v.scrollTo(offset)
+    return
+
+scrollToKontakt = ->
+    offset = contactBlock.offsetTop - 50
+    v.scrollTo(offset)
+    contactBlock.classList.add("lit")
+    if endLitID then clearTimeout(endLitID)
+    endLitID = setTimeout(endLit, 700)
+    return
+
+endLit = ->
+    contactBlock.classList.remove("lit")
     return
 
 #endregion

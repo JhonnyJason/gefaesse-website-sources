@@ -3,6 +3,7 @@ indexdomconnect = {name: "indexdomconnect"}
 ############################################################
 indexdomconnect.initialize = () ->
     global.upbutton = document.getElementById("upbutton")
+    global.contactBlock = document.getElementById("contact-block")
     global.beitritt = document.getElementById("beitritt")
     global.ehrungen = document.getElementById("ehrungen")
     global.sektionen = document.getElementById("sektionen")
@@ -15,6 +16,7 @@ indexdomconnect.initialize = () ->
     global.sektionenLink = document.getElementById("sektionen-link")
     global.ehrungenLink = document.getElementById("ehrungen-link")
     global.beitrittLink = document.getElementById("beitritt-link")
+    global.kontaktLink = document.getElementById("kontakt-link")
     global.menuOpenButton = document.getElementById("menu-open-button")
     global.menuCloseButton = document.getElementById("menu-close-button")
     return
