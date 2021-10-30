@@ -11,6 +11,8 @@ ln -sfT ../../sources/ressources/img img
 ln -sf ../../sources/ressources/manifest/* .
 ln -sf ../../sources/ressources/favicon/* .
 
+ln -sf ../../sources/ressources/oegia_statuten.pdf .
+
 popd
 
 echo 0
