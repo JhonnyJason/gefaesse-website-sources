@@ -70,7 +70,6 @@ p
     padding-left: mobile-side-padding
     padding-right: mobile-side-padding
 
-
 paddingless-max-content-width = (max-content-width + (2 * mobile-side-padding))
 @media screen and (min-width: paddingless-max-content-width)
     .max-content
@@ -82,3 +81,20 @@ paddingless-inner-content-width = (inner-content-width + (2 * mobile-side-paddin
     .inner-content
         padding-left: 0
         padding-right: 0
+
+
+
+.overly-broad-content
+    padding-left: 90px
+    padding-right 90px
+    box-sizing: border-box
+    
+@media screen and (max-width: 700px)
+    .overly-broad-content
+        padding-left: 40px
+        padding-right 40px
+
+@media screen and (max-width: 450px)
+    .overly-broad-content
+        padding-left: 15px
+        padding-right 15px
