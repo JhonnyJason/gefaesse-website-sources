@@ -7,7 +7,7 @@ vorarlbergData = [
         phoneNumber: '<a href="tel:0555269096">05552 690 96</a>'
         emailAddress: ''
         website: ''
-         cardContent: ''
+        cardContent: ''
     },
     {
         doctorName: 'Dr. Rainer Mathies'
@@ -248,20 +248,6 @@ steiermarkData = [
         '''
     }
 ]
-
-
-
-
-
-    {
-        doctorName: ''
-        stationName: ''
-        address: ''
-        phoneNumber: '<a href="tel:"></a>'
-        emailAddress: '<a href="mailto:"></a>'
-        website: '<a href="https://"></a>'
-        cardContent: ''
-    }
 
 ############################################################
 niederoesterreichData = [

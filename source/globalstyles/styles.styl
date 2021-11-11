@@ -1,5 +1,6 @@
 // globalstyles styles
 
+
 /*==========================================================
 Color Theme
 ==========================================================*/
@@ -18,12 +19,29 @@ mobile-side-padding = 15px
 
 
 /*==========================================================
+CD Font includes
+==========================================================*/
+// Inter Font as Helvetica Backup
+@font-face 
+    font-family: "Inter Variable"
+    src: url("/font/Inter-VariableFont_slnt,wght.ttf")
+
+@font-face 
+    font-family: "Inter Regular"
+    src: url("/font/static/Inter-Regular.ttf")
+
+@font-face 
+    font-family: "Inter Light"
+    src: url("/font/static/Inter-Light.ttf")
+
+
+/*==========================================================
 General Tag Styles
 ==========================================================*/
 body
     background-color cd-background
     color cd-foreground
-    font-family: Helvetica, Arial, sans-serif
+    font-family: Helvetica Neue,Helvetica, Inter Regular, Arial, sans-serif
     text-align: center
     font-size: 12pt
     // height 100vh
@@ -55,7 +73,8 @@ p
     font-size: 12pt
     letter-spacing: 1pt
     line-height: 130%
-
+    font-weight light
+    // font-family: "Inter Light"
 
 
 .inner-content
