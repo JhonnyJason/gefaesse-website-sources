@@ -26,7 +26,7 @@ headermodule.initialize = ->
     vorstandLink.addEventListener("click", scrollToVorstand)
     sektionenLink.addEventListener("click", scrollToSektionen)
     ehrungenLink.addEventListener("click", scrollToEhrungen)
-    beitrittLink.addEventListener("click", scrollToBeitritt)
+    # beitrittLink.addEventListener("click", scrollToBeitritt)
     kontaktLink.addEventListener("click", scrollToKontakt)
 
     # Fix to get the touchstart event.
