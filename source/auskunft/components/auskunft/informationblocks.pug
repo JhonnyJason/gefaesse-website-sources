@@ -1,4 +1,35 @@
-#information-block.vorarlberg 
-    #vorarlberg-station-links 
-        #station-link1: a 6700 Bludenz, Bahnhofplatz 1a
-        #station-link2: a 6800 Feldkirch, Carinagasse 47
+#hidden-templates 
+    
+    #information-detail-card-template 
+        p.detail-owner {{{doctorName}}}
+        p.detail-name {{{stationName}}} 
+        p.detail-address {{{address}}}
+        p.detail-telephone {{{phoneNumber}}} 
+        p.detail-email {{{emailAddress}}}
+        p.detail-website {{{website}}}
+    
+    #station-element-template
+        p.station-owner {{{doctorName}}}
+        p.station-address {{{address}}}
+
+#information-block
+    #information-detail-card
+        p.detail-owner Prof. Dr. Josef Hofer
+        p.detail-name Praxis Dr. Hofer 
+        p.detail-address 4240 Freistadt, Etrichstraße 9-13
+            a()
+        p.detail-telephone Tel:
+            a(href="tel:+431794273844") 
+                | +43 1 794 273844
+        p.detail-email  E-Mail: 
+            a(href="mailto:internist@frei-stadt.at")
+                | internist@frei-stadt.at
+            | (Fachärztezentrum Freistadt)
+
+    #information-stations-list
+        .station.selected
+            p.station-owner Prof. Dr. Josef Hofer 
+            p.station-address 4240 Freistadt, Etrichstraße 9-13
+        .station 
+            p.station-owner OA.Dr. Getraud Lang 
+            p.station-address 4240 Freistadt, Krankenhausstraße 1

@@ -1,3 +1,62 @@
+#information-block
+    display flex
+    justify-content: space-between
+    flex-direction: row-reverse
+
+#information-detail-card
+    min-width 290px
+    margin-bottom 50px
+    margin-left 30px
+    padding 50px 30px
+    border solid 2px cd-foreground
+    p
+        line-height: 180%
+    .detail-owner
+        font-weight: bold
+
+#information-stations-list
+    min-width 290px
+
+.station
+    background-color white
+    padding 10px
+    border solid 2px cd-foreground
+    margin-top 20px
+    cursor pointer
+    transition all 0.5s
+
+.station:hover
+    background-color cd-darkbackground
+
+
+.station.selected
+    border-color cd-darkbackground
+    background-color cd-darkbackground
+
+
+.station-owner
+    font-weight bold
+
+@media screen and (max-width: 850px)
+    #information-block
+        flex-direction: column
+
+    #information-detail-card
+        margin-left 0
+
+
+
+
+
+#hidden-templates
+    display none
+
+
+
+
+
+
+
 #auskunft
     padding-top: 30px
     padding-bottom: 100px
@@ -6,6 +65,9 @@
     h1
         word-break: break-all
         text-align: center
+    h2
+        margin-bottom: 30px
+        margin-top: 20px
 
 .bundesland
     transition: all 0.5s
