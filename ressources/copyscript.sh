@@ -15,5 +15,6 @@ cp sources/ressources/favicon/* output/
 cp sources/ressources/manifest/* output/
 
 cp sources/ressources/oegia_statuten.pdf output/
+cp sources/ressources/oegia_empfohlene_lernunterlagen.pdf output/
 
 echo 0

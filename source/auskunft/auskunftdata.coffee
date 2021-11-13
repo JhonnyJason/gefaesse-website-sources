@@ -91,7 +91,9 @@ steiermarkData = [
         cardContent: '''
             <p class="detail-owner">Prof. Rabl</p>
             <p class="detail-name">
-            Privatordination Prof. Rabl<br>
+            Privatordination Prof. Rabl
+            </p>
+            <p>
             8700 Leoben, Peter Tunner Strasse 4/1<br>
             <a href="tel:06765850693">0676 5850 693</a><br>
             <a href="mailto:rabl@inode.at">rabl@inode.at</a>
@@ -235,7 +237,9 @@ steiermarkData = [
         cardContent: '''
             <p class="detail-owner">Prof. Rabl</p>
             <p class="detail-name">
-            Privatordination Prof. Rabl<br>
+            Privatordination Prof. Rabl
+            </p>
+            <p>
             8700 Leoben, Peter Tunner Strasse 4/1<br>
             <a href="tel:06765850693">0676 5850 693</a><br>
             <a href="mailto:rabl@inode.at">rabl@inode.at</a>
