@@ -89,7 +89,7 @@ steiermarkData = [
         emailAddress: '<a href="mailto:rabl@inode.at">rabl@inode.at</a>'
         website: ''
         cardContent: '''
-            <h3>Prof. Rabl</h3>
+            <p class="detail-owner">Prof. Rabl</p>
             <p>
             Privatordination Prof. Rabl<br>
             8700 Leoben, Peter Tunner Strasse 4/1<br>
@@ -138,9 +138,9 @@ steiermarkData = [
         emailAddress: ''
         website: ''
         cardContent: '''
-            <h3>
+            <p class="detail-name">
                 LKH-Univ. Klinikum Graz - Univ. Klinik für Innere Medizin
-            </h3>
+            </p>
             <p>
                 suppl. Abteilungsleiter<br>
                 ao. Univ. Prof. Dr. Marianne Brodmann<br>
@@ -155,7 +155,7 @@ steiermarkData = [
                 E-mail: <a href="mailto:angela.kroboth@klinikum-graz.at">angela.kroboth@klinikum-graz.at</a><br>
                 E-mail: <a href="mailto:priska.hirschmann@klinikum-graz.at">priska.hirschmann@klinikum-graz.at</a>
             <p>
-            <div class="lkh-fachaerzte">
+            <div class="further-details">
             <h3>
                Fachärzte Innere Medizin mit Zusatzfach Angiologie
             </h3>
@@ -233,7 +233,7 @@ steiermarkData = [
         emailAddress: '<a href="mailto:rabl@inode.at">rabl@inode.at</a>'
         website: ''
         cardContent: '''
-            <h3>Prof. Rabl</h3>
+            <p class="detail-owner">Prof. Rabl</p>
             <p>
             Privatordination Prof. Rabl<br>
             8700 Leoben, Peter Tunner Strasse 4/1<br>
@@ -362,9 +362,9 @@ wienData = [
         emailAddress: ''
         website: ''
         cardContent: '''
-            <h3>
+            <p class="detail-name">
                 AKH Universitätsklinik für Innere Medizin II - Klinische Abteilung für Angiologie
-            </h3>
+            </p>
             <p>
                 Univ. Prof. Dr. Renate Koppensteiner<br>
                 Barbara Stumpf-Fekete/Abteilungssekretariat
@@ -375,7 +375,7 @@ wienData = [
                 Fax: <a href="tel:+4314040046650">+43 (0)1 40400-46650</a><br>
                 E-mail: <a href="mailto:barbara.stumpf-fekete@meduniwien.ac.at">barbara.stumpf-fekete@meduniwien.ac.at</a>
             <p>
-            <div class="lkh-fachaerzte">
+            <div class="further-details">
             <h3>
                Fachärzte Innere Medizin mit Zusatzfach Angiologie
             </h3>
@@ -552,6 +552,6 @@ allData =
     steiermark: steiermarkData
     niederoesterreich: niederoesterreichData
     wien: wienData
-    burgenland: burgelandData
+    burgenland: burgenlandData
 
 module.exports = allData

@@ -5,5 +5,6 @@ debugmodule.modulesToDebug =
     unbreaker: true
     # configmodule: true
     headermodule: true
-
+    stationselectmodule: true
+    
 export default debugmodule

@@ -1,5 +1,5 @@
 import Modules from "./allmodules"
-import domconnect from "./indexdomconnect"
+import domconnect from "./linksdomconnect"
 domconnect.initialize()
 
 global.allModules = Modules

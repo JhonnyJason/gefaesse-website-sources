@@ -1,6 +1,6 @@
 #hidden-templates 
     
-    #information-detail-card-template 
+    #information-detail-card-template
         p.detail-owner {{{doctorName}}}
         p.detail-name {{{stationName}}} 
         p.detail-address {{{address}}}
@@ -9,11 +9,13 @@
         p.detail-website {{{website}}}
     
     #station-element-template
-        p.station-owner {{{doctorName}}}
-        p.station-address {{{address}}}
+        .station
+            p.station-owner {{{doctorName}}}
+            p.station-address {{{address}}}
 
 #information-block
-    #information-detail-card
+    #information-detail-card-container
+        #information-detail-card
         //- p.detail-owner Prof. Dr. Josef Hofer
         //- p.detail-name Praxis Dr. Hofer 
         //- p.detail-address 4240 Freistadt, Etrichstraße 9-13
