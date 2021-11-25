@@ -13,6 +13,8 @@ ln -sf ../../sources/ressources/favicon/* .
 
 ln -sf ../../sources/ressources/oegia_statuten.pdf .
 ln -sf ../../sources/ressources/oegia_empfohlene_lernunterlagen.pdf .
+ln -sf ../../sources/ressources/Beitrittsformular.pdf .
+ln -sf ../../sources/ressources/Datenschutzerklaerung.pdf .
 
 popd
 

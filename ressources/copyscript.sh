@@ -16,5 +16,7 @@ cp sources/ressources/manifest/* output/
 
 cp sources/ressources/oegia_statuten.pdf output/
 cp sources/ressources/oegia_empfohlene_lernunterlagen.pdf output/
+cp sources/ressources/Beitrittsformular.pdf output/
+cp sources/ressources/Datenschutzerklaerung.pdf output/
 
 echo 0
