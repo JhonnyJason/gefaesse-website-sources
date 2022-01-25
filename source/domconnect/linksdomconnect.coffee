@@ -11,6 +11,7 @@ linksdomconnect.initialize = () ->
     global.sektionenLink = document.getElementById("sektionen-link")
     global.ehrungenLink = document.getElementById("ehrungen-link")
     global.beitrittLink = document.getElementById("beitritt-link")
+    global.webinareLink = document.getElementById("webinare-link")
     global.kontaktLink = document.getElementById("kontakt-link")
     global.menuOpenButton = document.getElementById("menu-open-button")
     global.menuCloseButton = document.getElementById("menu-close-button")

@@ -14,6 +14,7 @@ v = null
 
 isTouchscreen = false
 ogiaLinkExpanded = false
+webinareLinkExpanded = false
 
 ############################################################
 headermodule.initialize = ->
@@ -34,6 +35,11 @@ headermodule.initialize = ->
     anchorTagOgiaLink = ogiaLink.getElementsByTagName("a")[0]
     anchorTagOgiaLink.addEventListener("touchstart", touchedOgiaLink)
     anchorTagOgiaLink.addEventListener("click", clickedOgiaLink)
+
+    anchorTagWebinareLink = webinareLink.getElementsByTagName("a")[0]
+    anchorTagWebinareLink.addEventListener("touchstart", touchedWebinareLink)
+    anchorTagWebinareLink.addEventListener("click", clickedWebinareLink)
+
 
     menuOpenButton.addEventListener("click", openMenu)
     menuCloseButton.addEventListener("click", closeMenu)
@@ -94,6 +100,20 @@ clickedOgiaLink = (evt) ->
         ogiaLink.classList.add("tapped")
         return true
     return true
+
+
+touchedWebinareLink = ->
+    isTouchscreen = true
+    return true
+
+clickedWebinareLink = (evt) ->
+    if isTouchscreen and !webinareLinkExpanded
+        evt.preventDefault()
+        webinareLinkExpanded = true
+        webinareLink.classList.add("tapped")
+        return true
+    return true
+
 
 ############################################################
 scrollToZiele = ->

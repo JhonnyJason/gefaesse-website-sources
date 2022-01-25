@@ -1,4 +1,4 @@
-avatar-size = 180px
+avatar-size = 130px
 max-details-width = 340px
 
 min-width-for-full-grid = 1200px
@@ -33,15 +33,26 @@ min-width-for-fat-card = 640px
         display flex
 
         .vorstand-card-picture
+            position relative
             flex-shrink: 0
             img
                 background-color white
-                border-radius: 50%
+                // border-radius: 50%
                 width: avatar-size
                 height: avatar-size
                 margin 0 45px
-                object-fit: contain
-                filter: grayscale(100%)
+                // object-fit: contain
+                object-fit: cover //#CBE4E9
+                filter: grayscale(100%) hue-rotate(180deg)
+        .vorstand-picture-overlay
+            position absolute
+            width: avatar-size
+            height: avatar-size
+            margin 0 45px
+            top 0
+            left 0
+            background: alpha(#68d4e8, 0.2)
+        
         .vorstand-card-details
             max-width: max-details-width
             p
