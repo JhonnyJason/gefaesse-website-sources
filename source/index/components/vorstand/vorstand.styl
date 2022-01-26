@@ -67,6 +67,9 @@ min-width-for-fat-card = 640px
                 margin-bottom 15px
             .address
                 margin-bottom 15px
+            .contacts
+                overflow: hidden
+                text-overflow: ellipsis
 
 /*==========================================================
 Responsive Stuff
@@ -74,6 +77,7 @@ Responsive Stuff
 @media screen and (max-width: min-width-for-full-grid)
     #vorstand-cards-block
         grid-template-columns: 1fr
+
 
 @media screen and (max-width: min-width-for-fat-card)
     #vorstand-cards-block
@@ -88,6 +92,10 @@ Responsive Stuff
             .vorstand-card-picture
                 width: 100%
                 box-sizing: border-box
+            .vorstand-picture-overlay
+                margin 0
+                left 50%
+                transform: translateX(-50%) 
             .vorstand-card-details
                 width: 100%
                 box-sizing: border-box

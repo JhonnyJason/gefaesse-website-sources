@@ -12,6 +12,8 @@ print = (arg) -> console.log(arg)
 upButton = null
 v = null
 
+offsetOff = 60
+
 isTouchscreen = false
 ogiaLinkExpanded = false
 webinareLinkExpanded = false
@@ -117,32 +119,32 @@ clickedWebinareLink = (evt) ->
 
 ############################################################
 scrollToZiele = ->
-    offset = ziele.offsetTop - 50
+    offset = ziele.offsetTop - offsetOff
     v.scrollTo(offset)
     return
 
 scrollToVorstand = ->
-    offset = vorstand.offsetTop - 50
+    offset = vorstand.offsetTop - offsetOff
     v.scrollTo(offset)
     return
 
 scrollToSektionen = ->
-    offset = sektionen.offsetTop - 50
+    offset = sektionen.offsetTop - offsetOff
     v.scrollTo(offset)
     return
 
 scrollToEhrungen = ->
-    offset = ehrungen.offsetTop - 50
+    offset = ehrungen.offsetTop - offsetOff
     v.scrollTo(offset)
     return
 
 scrollToBeitritt = ->
-    offset = beitritt.offsetTop - 50
+    offset = beitritt.offsetTop - offsetOff
     v.scrollTo(offset)
     return
 
 scrollToKontakt = ->
-    offset = contactBlock.offsetTop - 50
+    offset = contactBlock.offsetTop - offsetOff
     v.scrollTo(offset)
     contactBlock.classList.add("lit")
     if endLitID then clearTimeout(endLitID)
