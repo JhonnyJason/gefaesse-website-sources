@@ -9,27 +9,26 @@ olog = (obj) -> log "\n" + ostr(obj)
 print = (arg) -> console.log(arg)
 #endregion
 
-upButton = null
+############################################################
 v = null
 
-offsetOff = 60
+############################################################
+offOffset = 60
 
+############################################################
 isTouchscreen = false
+
+############################################################
 ogiaLinkExpanded = false
 webinareLinkExpanded = false
+termineLinkExpanded = false
+
 
 ############################################################
 headermodule.initialize = ->
     log "headermodule.initialize"
-    upButton = allModules.upbuttonmodule
     v = allModules.vanillautilmodule
 
-    document.addEventListener("scroll", weScrolled)
-    zieleLink.addEventListener("click", scrollToZiele)
-    vorstandLink.addEventListener("click", scrollToVorstand)
-    sektionenLink.addEventListener("click", scrollToSektionen)
-    ehrungenLink.addEventListener("click", scrollToEhrungen)
-    beitrittLink.addEventListener("click", scrollToBeitritt)
     kontaktLink.addEventListener("click", scrollToKontakt)
 
     # Fix to get the touchstart event.
@@ -42,40 +41,17 @@ headermodule.initialize = ->
     anchorTagWebinareLink.addEventListener("touchstart", touchedWebinareLink)
     anchorTagWebinareLink.addEventListener("click", clickedWebinareLink)
 
+    anchorTagTermineLink = termineLink.getElementsByTagName("a")[0]
+    anchorTagTermineLink.addEventListener("touchstart", touchedTermineLink)
+    anchorTagTermineLink.addEventListener("click", clickedTermineLink)
+
 
     menuOpenButton.addEventListener("click", openMenu)
     menuCloseButton.addEventListener("click", closeMenu)
-    weScrolled()
     return
     
 ############################################################
 #region  EventListeners
-weScrolled = ->
-    offset = window.scrollY
-
-    if ogiaLinkExpanded
-        ogiaLinkExpanded = false
-        ogiaLink.classList.remove("tapped")
-        # blur to get rid off :hover state
-        ogiaLink.blur()
-
-    if offset > 110
-        headermenu.classList.add("small-nav")
-        headermenu.classList.remove("big-nav")
-        headermenu.classList.remove("menu-open")
-        headermenu.classList.add("menu-closed")
-    else 
-        headermenu.classList.remove("small-nav")
-        headermenu.classList.remove("big-nav")
-        headermenu.classList.add("menu-open")
-        headermenu.classList.remove("menu-closed")
-    
-    if offset > 500 then upButton.show()
-    else upButton.hide()
-    
-    return
-
-############################################################
 openMenu = ->
     headermenu.classList.add("menu-open")
     headermenu.classList.remove("menu-closed")
@@ -104,6 +80,7 @@ clickedOgiaLink = (evt) ->
     return true
 
 
+############################################################
 touchedWebinareLink = ->
     isTouchscreen = true
     return true
@@ -116,35 +93,22 @@ clickedWebinareLink = (evt) ->
         return true
     return true
 
+############################################################
+touchedTermineLink = ->
+    isTouchscreen = true
+    return true
+
+clickedTermineLink = (evt) ->
+    if isTouchscreen and !termineLinkExpanded
+        evt.preventDefault()
+        termineLinkExpanded = true
+        termineLink.classList.add("tapped")
+        return true
+    return true
 
 ############################################################
-scrollToZiele = ->
-    offset = ziele.offsetTop - offsetOff
-    v.scrollTo(offset)
-    return
-
-scrollToVorstand = ->
-    offset = vorstand.offsetTop - offsetOff
-    v.scrollTo(offset)
-    return
-
-scrollToSektionen = ->
-    offset = sektionen.offsetTop - offsetOff
-    v.scrollTo(offset)
-    return
-
-scrollToEhrungen = ->
-    offset = ehrungen.offsetTop - offsetOff
-    v.scrollTo(offset)
-    return
-
-scrollToBeitritt = ->
-    offset = beitritt.offsetTop - offsetOff
-    v.scrollTo(offset)
-    return
-
 scrollToKontakt = ->
-    offset = contactBlock.offsetTop - offsetOff
+    offset = contactBlock.offsetTop - offOffset
     v.scrollTo(offset)
     contactBlock.classList.add("lit")
     if endLitID then clearTimeout(endLitID)
@@ -157,5 +121,31 @@ endLit = ->
 
 #endregion
 
+
+############################################################
+#region exposedFunctions
+headermodule.collapseExpanded = ->
+
+    if ogiaLinkExpanded
+        ogiaLinkExpanded = false
+        ogiaLink.classList.remove("tapped")
+        # blur to get rid off :hover state
+        ogiaLink.blur()
+
+    if termineLinkExpanded
+        termineLinkExpanded = false
+        termineLink.classList.remove("tapped")
+        # blur to get rid off :hover state
+        termineLink.blur()
+
+    if webinareLinkExpanded
+        webinareLinkExpanded = false
+        webinareLink.classList.remove("tapped")
+        # blur to get rid off :hover state
+        webinareLink.blur()
+
+    return
+
+#endregion
 
 module.exports = headermodule
