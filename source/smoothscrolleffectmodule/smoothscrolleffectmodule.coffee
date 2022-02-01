@@ -11,7 +11,7 @@ print = (arg) -> console.log(arg)
 
 ############################################################
 v = null
-headerHeight = 60
+headerHeight = 70
 
 upButton = null
 
