@@ -2,48 +2,73 @@
 .vergangenes-webinar-entry
     text-align: left
     padding-bottom 30px
-    padding-top 30px
-    border-bottom solid 2px cd-foreground
-    display flex
-    flex-direction: row-reverse
-    justify-content: flex-end
+    // padding-top 30px
+    background-color cd-darkbackground
+    // border-bottom solid 2px cd-foreground
 
-    .vergangenes-webinar-details
-        width 50%
-        padding-right 20px
-        box-sizing: border-box
-    .vergangenes-webinar-picture
-        flex-shrink: 4
-        img
-            max-width 100%
-    .vergangenes-webinar-videos
-        flex-shrink: 4
-        ul
-            width 100%
-        li
-            padding 7px
     h2
         font-size: 14pt
         font-weight: bold
         text-transform: uppercase
+        letter-spacing: 1.5pt
+    h3
+        font-size: 14pt
+        // font-weight: bold
+        // text-transform: uppercase
+        margin-top 60px
+        padding 0 20px
         margin-bottom 30px
         letter-spacing: 1.5pt
 
-    .warning
-        color cd-flash
+    .vergangenes-webinar-picture
+        img
+            max-width 100%
+    .vergangenes-webinar-details
+        display inline-block
+        width 50%
+        padding 0 20px
+        box-sizing: border-box
+    .flyer
+        display: inline-block
+        width 49%
+        text-align: center
+        .download-button
+            font-size: 12pt
+            padding 15px
+    .vergangenes-webinar-videos
+        ul
+            width 100%
+            padding 0 20px
+            box-sizing: border-box
+        li
+            padding 7px
 
-@media screen and (max-width: 650px)
+    .webinar-video
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        max-width 600px
+        background-color white
+        padding 20px
+        box-sizing: border-box
+        margin-bottom: 20px
+        align-items: center
+        p 
+            margin-bottom: 0
+        svg
+            width 50px
+            height 50px
+            cursor pointer
+
+@media screen and (max-width: 770px)
 
     .vergangenes-webinar-entry
-        flex-direction: column
-        justify-content: flex-end
-
         .vergangenes-webinar-details
             padding-top 20px
             width 100%
             padding-right 0
-        .vergangenes-webinar-picture
+        .flyer
+            margin-top: 30px
+            display: inline-block
             width 100%
-            flex-shrink: 0
-            img
-                max-width 100%
+            text-align: center

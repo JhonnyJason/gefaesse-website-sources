@@ -1,0 +1,5 @@
+mixin video(label, src)
+    .webinar-video
+        p=label
+        .play-button(video-source=src): svg(): use(href="#svg-play-icon")
+        

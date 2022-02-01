@@ -7,6 +7,7 @@ pushd testing/document-root
 
 ln -sfT ../../sources/ressources/font font
 ln -sfT ../../sources/ressources/img img
+ln -sfT ../../sources/ressources/video video
 
 ln -sf ../../sources/ressources/manifest/* .
 ln -sf ../../sources/ressources/favicon/* .
@@ -15,6 +16,7 @@ ln -sf ../../sources/ressources/oegia_statuten.pdf .
 ln -sf ../../sources/ressources/oegia_empfohlene_lernunterlagen.pdf .
 ln -sf ../../sources/ressources/Beitrittsformular.pdf .
 ln -sf ../../sources/ressources/Datenschutzerklaerung.pdf .
+ln -sf ../../sources/ressources/flyer-webinar-dez-9-21.pdf .
 
 popd
 

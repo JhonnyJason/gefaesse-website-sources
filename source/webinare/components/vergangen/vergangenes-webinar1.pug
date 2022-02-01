@@ -1,12 +1,19 @@
-extends zukunftiges-webinar-base.pug
+extends vergangenes-webinar-base.pug
+include video-mixin.pug
+
 block picture 
-    img(src="/img/termin-entry1.jpg" alt="Termin Poster")
+    img(src="/img/banner-webinar-dez-9-21.png" alt="Webinar Banner")
 block title
-    | Internationale Kongresse
-block description
-    | Angiologische Sommerakademie 2020<br>
-    | 19.-20. Juni 2020, Berlin<br>
-    | Website: 
-    a(href="https://www.vascular-summer-academy.info/vasc/") www.vascular-summer-academy.info/vasc/
-    br
-    span.warning Auf den 11. bis 12. Juni 2021 verschoben
+    | Optimierung der Gefäßintervention mit neuen Therapieoptionen
+block time
+    | Donnerstag, 9. Dezember 2021, 17:30–19:00 Uhr CET
+block flyer 
+    a.download-button(href="/flyer-webinar-dez-9-21.pdf" target="_blank") Download Flyer 
+block videos
+    ul
+        +video("Video 1 - Lichtenberg", "/video/video1-webinar-dez-9-21.mp4")
+        +video("Video 2 - Wolf", "/video/video2-webinar-dez-9-21.mp4")
+        +video("Video 3 - Brodmann", "/video/video3-webinar-dez-9-21.mp4")
+        +video("Video 4 - Schlager", "/video/video4-webinar-dez-9-21.mp4")
+        +video("Video 5 - Werner", "/video/video5-webinar-dez-9-21.mp4")
+        +video("Gesamtes Webinar", "/video/full-webinar-dez-9-21.mp4")

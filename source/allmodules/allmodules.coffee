@@ -6,6 +6,7 @@ import smoothscrolleffectmodule from "./smoothscrolleffectmodule"
 import statemodule from "./statemodule"
 import upbuttonmodule from "./upbuttonmodule"
 import vanillautilmodule from "./vanillautilmodule"
+import videodisplaymodule from "./videodisplaymodule"
 
 Modules = {
     configmodule,
@@ -16,6 +17,7 @@ Modules = {
     statemodule,
     upbuttonmodule,
     vanillautilmodule,
+    videodisplaymodule,
 }
 
 export default Modules
