@@ -25,7 +25,8 @@ smoothscrolleffectmodule.initialize = ->
     allLinks = document.getElementsByTagName("a")
     for link,i in allLinks
         ref = link.getAttribute("href")
-        anchorname = getAnchorName(ref)
+        if ref then anchorname = getAnchorName(ref)
+        else anchorname = null
         if anchorname then addScrollEffect(link, anchorname)
 
     document.addEventListener("scroll", weScrolled)
