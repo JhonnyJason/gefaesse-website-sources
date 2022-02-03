@@ -1,5 +1,12 @@
-mixin video(label, src)
-    .webinar-video
-        p=label
-        .play-button(video-source=src): svg(): use(href="#svg-play-icon")
+mixin video(label, name, location, src)
+    li.webinar-video
+        .text-block
+            p.label=label
+            if name
+                p.name=name
+            if location
+                p.location=location
+        .play-block(video-source=src)
+            .play-icon: svg(): use(href="#svg-play-icon")
+            p.hint Webinar starten
         

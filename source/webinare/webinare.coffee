@@ -6,7 +6,7 @@ global.allModules = Modules
 
 ############################################################
 appStartup = ->
-    allVideoButtons = document.getElementsByClassName("play-button")
+    allVideoButtons = document.getElementsByClassName("play-block")
     for button in allVideoButtons
         button.addEventListener("click", playClicked)
     ## which modules shall be kickstarted?

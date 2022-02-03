@@ -1,23 +1,32 @@
 
 .vergangenes-webinar-entry
     text-align: left
-    padding-bottom 30px
-    // padding-top 30px
+    padding 10px
     background-color cd-darkbackground
     // border-bottom solid 2px cd-foreground
 
     h2
+        padding-top 15px
+        padding-bottom: 10px
+        max-width 500px
         font-size: 14pt
         font-weight: bold
         text-transform: uppercase
         letter-spacing: 1.5pt
+        border-bottom: solid 2px
+        margin-bottom: 15px
+        letter-spacing: 1.2pt
+
+    p.time
+        font-size: 11pt
+        letter-spacing 0.5pt
+        
     h3
         font-size: 14pt
-        // font-weight: bold
+        font-weight: bold
         // text-transform: uppercase
-        margin-top 60px
-        padding 0 20px
-        margin-bottom 30px
+        margin-top 40px
+        margin-bottom 15px
         letter-spacing: 1.5pt
 
     .vergangenes-webinar-picture
@@ -26,41 +35,81 @@
             object-fit: cover
             
     .vergangenes-webinar-details
-        display inline-block
-        width 50%
-        padding 0 20px
-        box-sizing: border-box
+        display: flex
+        flex-wrap: wrap
+        align-items: flex-end
+        justify-content: space-between
     .flyer
-        display: inline-block
-        width 49%
         text-align: center
         .download-button
-            font-size: 12pt
+            font-size: 11pt
+            letter-spacing 1pt
             padding 15px
+            background-color white
+            color cd-dark
+            border solid 2px
+            width 220px
+            box-sizing: border-box
+
+
     .vergangenes-webinar-videos
         ul
             width 100%
-            padding 0 20px
             box-sizing: border-box
+            border-bottom: solid 2px
+            margin-bottom 10px
         li
-            padding 7px
+            border-top: solid 2px
 
     .webinar-video
         display: flex
         flex-wrap: wrap
         justify-content: space-between
-        max-width 600px
         background-color white
-        padding 20px
-        box-sizing: border-box
-        margin-bottom: 20px
         align-items: center
         p 
             margin-bottom: 0
+    .text-block
+        padding 5px
+        display flex
+        align-items: center
+        flex-wrap: wrap
+
+        p
+            padding 5px
+            font-size: 11pt
+            letter-spacing 0.5pt
+            margin-bottom 5px
+            margin-top 5px
+
+        .label 
+            font-weight: bold
+            padding-right 10px
+        .name
+            padding 0 10px
+            border-left solid 1px
+        .location
+            padding 0 10px
+            border-left solid 1px
+            
+
+    .play-block
+        padding 5px
+        height 40px
+        margin-left auto
+        min-width 280px
+        display: flex
+        justify-content: center
+        align-items: center
+        cursor pointer
+        .hint
+            font-size: 9pt
+            letter-spacing 0.5pt
+            padding-left 10px
+
         svg
-            width 50px
-            height 50px
-            cursor pointer
+            width 40px
+            height 40px
 
 @media screen and (max-width: 770px)
 
@@ -74,3 +123,8 @@
             display: inline-block
             width 100%
             text-align: center
+
+@media screen and (max-width: 310px)
+    .vergangenes-webinar-entry
+        h2 
+            word-break: break-all
