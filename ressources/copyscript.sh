@@ -21,5 +21,6 @@ cp sources/ressources/oegia_empfohlene_lernunterlagen.pdf output/
 cp sources/ressources/Beitrittsformular.pdf output/
 cp sources/ressources/Datenschutzerklaerung.pdf output/
 cp sources/ressources/flyer-webinar-dez-9-21.pdf output/
+cp sources/ressources/esvm_2022.pdf output/
 
 echo 0
