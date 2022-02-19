@@ -174,7 +174,7 @@ steiermarkData = [
         '''
     },
     {
-        doctorName: 'a.o. Univ. Prof. Dr. Marianne Brodmann'
+        doctorName: 'Ao. Univ. Prof. Dr. Marianne Brodmann'
         stationName: 'Landeskrankenhaus-Universitätsklinikum Graz<br>Klinische Abteilung f. Angiologie'
         address: '8036 Graz, Auenbruggerplatz 27'
         phoneNumber: '<a href="tel:+4331638512911"> + 43 316 385 12911</a>'
