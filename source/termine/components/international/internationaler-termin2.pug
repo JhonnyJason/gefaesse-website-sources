@@ -1,9 +1,15 @@
-extends internationaler-termin-base.pug
+//- extends ../termine/internationaler-termin-base.pug
+extends ../termine/termin-base.pug
+
 block picture 
-    img(src="/img/termin-entry1.jpg" alt="Termin Poster")
+    img(src="/img/banner-termin-esvm-2022.jpg" alt="Kongress Banner")
 block title
-    | Lokale Kongresse
-block description
-    | Sailersymposium & Jahrestagung<br>
-    | der Österreichischen Gesellschaft für Internistische Angiologie<br>
-    | 24.–25. Juni 2021, Graz
+    | VIII Congress of the European Society of Vascular Medicine
+block location
+    | Stockholm
+block time
+    | 6-8 October 2022
+block website 
+    a(href="https://www.vascular-medicine.org/" target="_blank") www.vascular-medicine.org
+block flyer 
+    a.download-button(href="/esvm_2022.pdf" target="_blank") Download Flyer 

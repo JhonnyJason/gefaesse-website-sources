@@ -1,9 +1,16 @@
-extends lokaler-termin-base.pug
+//- extends ../termine/lokaler-termin-base.pug
+extends ../termine/termin-base.pug
+
 block picture 
-    img(src="/img/termin-entry1.jpg" alt="Termin Poster")
+    //- img(src="/img/banner-termin-gerinnungstage.jpg" alt="Gerinnungstage Banner")
+    img(src="/img/graz_small.jpg" alt="Grazer Gerinnungstage Banner")
 block title
-    | Lokale Kongresse
-block description
-    | Sailersymposium & Jahrestagung<br>
-    | der Österreichischen Gesellschaft für Internistische Angiologie<br>
-    | 24.–25. Juni 2021, Graz
+    | Grazer Gerinnungstage - 17. Sailersymposium
+block location
+    | Seminarzentrum LKH, Graz 
+block time
+    | 23-24 Juni 2022
+block website 
+    a(href="http://www.grazergerinnung.at/" target="_blank") www.grazergerinnung.at
+block flyer 
+    a.download-button(href="/gerinnungstage-2022.pdf" target="_blank") Download Flyer 

@@ -1,0 +1,74 @@
+
+
+.internationaler-termin-entry
+    text-align: left
+    padding 10px
+    background-color cd-darkbackground
+    // border-bottom solid 2px cd-foreground
+
+    h2
+        padding-top 15px
+        padding-bottom: 10px
+        max-width 500px
+        font-size: 14pt
+        font-weight: bold
+        text-transform: uppercase
+        letter-spacing: 1.5pt
+        border-bottom: solid 2px
+        margin-bottom: 15px
+        letter-spacing: 1.2pt
+
+    p.time
+        font-size: 11pt
+        letter-spacing 0.5pt
+        
+    h3
+        font-size: 14pt
+        font-weight: bold
+        // text-transform: uppercase
+        margin-bottom 15px
+        letter-spacing: 1.5pt
+
+    .internationaler-termin-picture
+        img
+            width 100%
+            object-fit: cover
+            min-height 200px
+            max-height 500px
+            
+    .internationaler-termin-details
+        display: flex
+        flex-wrap: wrap
+        align-items: flex-end
+        justify-content: space-between
+    .flyer
+        text-align: center
+        .download-button
+            font-size: 11pt
+            letter-spacing 1pt
+            padding 15px
+            background-color white
+            color cd-foreground
+            border solid 2px
+            width 220px
+            box-sizing: border-box
+
+
+
+@media screen and (max-width: 770px)
+
+    .internationaler-termin-entry
+        .internationaler-termin-details
+            padding-top 20px
+            width 100%
+            padding-right 0
+        .flyer
+            margin-top: 30px
+            display: inline-block
+            width 100%
+            text-align: center
+
+@media screen and (max-width: 310px)
+    .internationaler-termin-entry
+        h2 
+            word-break: break-all
