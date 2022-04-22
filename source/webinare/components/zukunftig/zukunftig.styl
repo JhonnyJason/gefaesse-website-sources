@@ -1,43 +1,85 @@
 
 .zukunftiges-webinar-entry
     text-align: left
-    padding-bottom 30px
-    padding-top 30px
-    border-bottom solid 2px cd-foreground
-    display flex
-    flex-direction: row-reverse
-    justify-content: flex-end
+    padding 10px
+    background-color cd-darkbackground
+    // border-bottom solid 2px cd-foreground
 
-    .zukunftiges-webinar-details
-        width 50%
-        padding-right 20px
-        box-sizing: border-box
-    .zukunftiges-webinar-picture
-        flex-shrink: 4
-        img
-            max-width 100%
     h2
+        padding-top 15px
+        padding-bottom: 10px
+        max-width 500px
         font-size: 14pt
         font-weight: bold
         text-transform: uppercase
-        margin-bottom 30px
+        letter-spacing: 1.5pt
+        border-bottom: solid 2px
+        margin-bottom: 15px
+        letter-spacing: 1.2pt
+
+    p.time
+        font-size: 11pt
+        letter-spacing 0.5pt
+        
+    h3
+        font-size: 14pt
+        font-weight: bold
+        // text-transform: uppercase
+        margin-top 40px
+        margin-bottom 15px
         letter-spacing: 1.5pt
 
-    .warning
-        color cd-flash
+    .zukunftiges-webinar-picture
+        img
+            width 100%
+            object-fit: cover
+            
+    .zukunftiges-webinar-details
+        display: flex
+        flex-wrap: wrap
+        align-items: flex-end
+        justify-content: space-between
+    .flyer
+        text-align: center
+        .download-button
+            font-size: 11pt
+            letter-spacing 1pt
+            padding 15px
+            background-color white
+            color cd-foreground
+            border solid 2px
+            width 220px
+            box-sizing: border-box
 
-@media screen and (max-width: 650px)
+    .webinar-registration
+        text-align: center
+        .registration-button
+            @extends .download-button
+            width 100%
+            margin-top 20px
+            // font-size: 11pt
+            // letter-spacing 1pt
+            // padding 15px
+            // background-color white
+            // color cd-foreground
+            // border solid 2px
+            // width 220px
+            // box-sizing: border-box
+
+@media screen and (max-width: 770px)
 
     .zukunftiges-webinar-entry
-        flex-direction: column
-        justify-content: flex-end
-
         .zukunftiges-webinar-details
             padding-top 20px
             width 100%
             padding-right 0
-        .zukunftiges-webinar-picture
+        .flyer
+            margin-top: 30px
+            display: inline-block
             width 100%
-            flex-shrink: 0
-            img
-                max-width 100%
+            text-align: center
+
+@media screen and (max-width: 310px)
+    .zukunftiges-webinar-entry
+        h2 
+            word-break: break-all

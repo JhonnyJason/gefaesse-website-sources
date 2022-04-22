@@ -24,5 +24,6 @@ cp sources/ressources/flyer-webinar-dez-9-21.pdf output/
 cp sources/ressources/esvm_2022.pdf output/
 cp sources/ressources/sommerakademie_2022.pdf output/
 cp sources/ressources/gerinnungstage_2022.pdf output/
+cp sources/ressources/thrombosedialog_2022.pdf output/
 
 echo 0
