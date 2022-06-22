@@ -20,7 +20,7 @@ cp sources/ressources/oegia_statuten.pdf output/
 cp sources/ressources/oegia_empfohlene_lernunterlagen.pdf output/
 cp sources/ressources/Beitrittsformular.pdf output/
 cp sources/ressources/Datenschutzerklaerung.pdf output/
-cp sources/ressources/flyer-webinar-dez-9-21.pdf output/
+cp sources/ressources/flyer_webinar_dez_9_21.pdf output/
 cp sources/ressources/esvm_2022.pdf output/
 cp sources/ressources/sommerakademie_2022.pdf output/
 cp sources/ressources/gerinnungstage_2022.pdf output/

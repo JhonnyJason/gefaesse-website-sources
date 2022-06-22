@@ -16,7 +16,7 @@ ln -sf ../../sources/ressources/oegia_statuten.pdf .
 ln -sf ../../sources/ressources/oegia_empfohlene_lernunterlagen.pdf .
 ln -sf ../../sources/ressources/Beitrittsformular.pdf .
 ln -sf ../../sources/ressources/Datenschutzerklaerung.pdf .
-ln -sf ../../sources/ressources/flyer-webinar-dez-9-21.pdf .
+ln -sf ../../sources/ressources/flyer_webinar_dez_9_21.pdf .
 ln -sf ../../sources/ressources/esvm_2022.pdf .
 ln -sf ../../sources/ressources/sommerakademie_2022.pdf .
 ln -sf ../../sources/ressources/gerinnungstage_2022.pdf .
