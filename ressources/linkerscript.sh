@@ -23,7 +23,7 @@ ln -sf ../../sources/ressources/gerinnungstage_2022.pdf .
 ln -sf ../../sources/ressources/thrombosedialog_2022.pdf .
 ln -sf ../../sources/ressources/iua_course_2022.pdf .
 ln -sf ../../sources/ressources/euro_thrombosis_2022.png .
-
+ln -sf ../../sources/ressources/dga_summer_school_2022.pdf .
 
 popd
 
