@@ -28,5 +28,6 @@ cp sources/ressources/thrombosedialog_2022.pdf output/
 cp sources/ressources/iua_course_2022.pdf output/
 cp sources/ressources/euro_thrombosis_2022.png output/
 cp sources/ressources/dga_summer_school_2022.pdf output/
+cp sources/ressources/ddg_herbsttagung.png output/
 
 echo 0
