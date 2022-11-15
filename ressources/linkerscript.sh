@@ -26,6 +26,7 @@ ln -sf ../../sources/ressources/euro_thrombosis_2022.png .
 ln -sf ../../sources/ressources/dga_summer_school_2022.pdf .
 ln -sf ../../sources/ressources/ddg_herbsttagung.png .
 ln -sf ../../sources/ressources/oegim_jahrestagung_2022.pdf .
+ln -sf ../../sources/ressources/gerinnungstage_2023.pdf .
 
 popd
 
