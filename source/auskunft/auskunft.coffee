@@ -1,12 +1,12 @@
-import Modules from "./allmodules"
-import domconnect from "./auskunftdomconnect"
+import Modules from "./allmodules.js"
+import domconnect from "./auskunftdomconnect.js"
 domconnect.initialize()
 
 global.allModules = Modules
 
 ############################################################
-import bundeslandselect from "./bundeslandselect"
-import stationselect from "./stationselect"
+import * as bundeslandselect from "./bundeslandselect.js"
+import * as stationselect from "./stationselect.js"
 
 ############################################################
 appStartup = ->

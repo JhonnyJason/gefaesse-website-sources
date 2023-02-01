@@ -1,23 +1,19 @@
-smoothscrolleffectmodule = {name: "smoothscrolleffectmodule"}
 ############################################################
-#region printLogFunctions
-log = (arg) ->
-    if allModules.debugmodule.modulesToDebug["smoothscrolleffectmodule"]?  then console.log "[smoothscrolleffectmodule]: " + arg
-    return
-ostr = (obj) -> JSON.stringify(obj, null, 4)
-olog = (obj) -> log "\n" + ostr(obj)
-print = (arg) -> console.log(arg)
+#region debug
+import { createLogFunctions } from "thingy-debug"
+{log, olog} = createLogFunctions("smoothscrolleffectmodule")
 #endregion
 
 ############################################################
 v = null
 headerHeight = 70
 
+############################################################
 upButton = null
 
 ############################################################
-smoothscrolleffectmodule.initialize = ->
-    log "smoothscrolleffectmodule.initialize"
+export initialize = ->
+    log "initialize"
     v = allModules.vanillautilmodule
     slideinMenu = allModules.slideinmenumodule
     upButton = allModules.upbuttonmodule
@@ -49,9 +45,7 @@ addScrollEffect = (link, anchorname) ->
     link.addEventListener("click", scrollFunction)
     return
 
-
 ############################################################
-#region eventListeners
 weScrolled = (evt) ->
     offset = window.scrollY
 
@@ -71,6 +65,3 @@ weScrolled = (evt) ->
     if offset > 500 then upButton.show()
     else upButton.hide()
 
-#endregion
-
-module.exports = smoothscrolleffectmodule

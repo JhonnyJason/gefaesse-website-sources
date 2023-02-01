@@ -1,10 +1,11 @@
-debugmodule = {name: "debugmodule", uimodule: false}
+import { addModulesToDebug } from "thingy-debug"
 
 ############################################################
-debugmodule.modulesToDebug = 
-    unbreaker: true
-    # configmodule: true
+export modulesToDebug = 
+    bundeslandselect: true
     headermodule: true
-    stationselectmodule: true
-    
-export default debugmodule
+    stationselect: true
+    upbuttonmodule: true
+    videodisplaymodule: true
+
+addModulesToDebug(modulesToDebug)    

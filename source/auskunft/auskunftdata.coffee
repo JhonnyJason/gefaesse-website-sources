@@ -1,5 +1,5 @@
 ############################################################
-vorarlbergData = [
+export vorarlberg = [
     {
         doctorName: 'Dr. Elmar Studer'
         stationName: ''
@@ -21,7 +21,7 @@ vorarlbergData = [
 ]
 
 ############################################################
-tirolData = [
+export tirol = [
     {
         doctorName: 'Ao.Univ.-Prof. Dr. Peter Marschang'
         stationName: 'Universitätsklinik für Innere Medizin III (Kardiologie und Angiologie)'
@@ -43,13 +43,13 @@ tirolData = [
 ]
 
 ############################################################
-salzburgData = []
+export salzburg = []
 
 ############################################################
-kaerntenData = []
+export kaernten = []
 
 ############################################################
-oberoesterreichData = [
+export oberoesterreich = [
     {
         doctorName: 'Prof. Dr. Josef Friedrich Hofer'
         stationName: 'Praxis Dr. Hofer'
@@ -71,7 +71,7 @@ oberoesterreichData = [
 ]
 
 ############################################################
-steiermarkData = [
+export steiermark = [
     {
         doctorName: 'Univ. Prof. Dr. Ernst Pilger'
         stationName: 'Kontaktperson Frau Andrea Schober'
@@ -254,7 +254,7 @@ steiermarkData = [
 ]
 
 ############################################################
-niederoesterreichData = [
+export niederoesterreich = [
     {
         doctorName: 'Dr. Sabine Hofmann'
         stationName: 'Ordination Dr. Hofmann'
@@ -276,7 +276,7 @@ niederoesterreichData = [
 ]
 
 ############################################################
-wienData = [
+export wien = [
     {
         doctorName: 'ao. Univ.-Prof. Dr. Wolfgang Mlekusch'
         stationName: 'Gefäßspezialist'
@@ -387,20 +387,57 @@ wienData = [
                 Priv.-Doz. Dr. Jasmin <b>AMIGHI-KNAPP</b><br>
                 Assoc.-Prof. Priv.-Doz. Dr. Sophie <b>BRUNNER-ZIEGLER</b><br>
                 Dr. Georgiana-Aura <b>GIURGEA</b><br>
-                Assoc.-Prof. Priv.-Doz. Dr. Thomas <b>GREMMEL</b><br>
                 Ao.Univ.-Prof. Dr. Michael <b>GSCHWANDTNER</b><br>
                 Ass.-Prof. Priv.-Doz. Dr. Matthias <b>HOKE</b><br>
                 Ao.Univ.-Prof. Dr. Christoph <b>KOPP</b><br>
                 o. Univ.-Prof. Dr. Renate <b>KOPPENSTEINER</b><br>
-                Ao.Univ.-Prof. Dr. Erich <b>MINAR</b><br>
                 Ao.Univ.-Prof. Dr. Wolfgang <b>MLEKUSCH</b><br>
-                Priv.-Doz. Dr. Schila <b>SABETI-SANDOR</b><br>
                 Ao.Univ.-Prof. Dr. Gerit-Holger <b>SCHERNTHANER</b><br>
                 Assoc.-Prof. Priv.-Doz. Dr. Oliver <b>SCHLAGER</b><br>
                 Ao.Univ.-Prof. Dr. Andrea <b>WILLFORT-EHRINGER</b><br>
+                Dr. Markus <b>Müller</b><br> 
+                Priv.-Doz. Dr.Dr. Clemens <b>Höbaus</b><br>
+                Priv.-Doz. Dr.  Patricia Pia <b>Wadowski</b>, PhD<br>
             </p>
             </div>
         '''
+    },
+    {
+        doctorName: 'Assoc.-Prof. Priv.-Doz. Dr. Thomas Gremmel'
+        stationName: 'Medizinische Universität Wien'
+        address: '1090 Wien, Währinger Gürtel 18-20'
+        phoneNumber: '<a href="tel:+4314040046700">+43 1 40400 46 700</a>'
+        emailAddress: '<a href="mailto:thomas.gremmel@meduniwien.ac.at">thomas.gremmel@meduniwien.ac.at</a>'
+        website: '<a href="https://www.meduniwien.ac.at/hp/n790-cardiopulmodis/supervisors/gremmel">www.meduniwien.ac.at/supervisors/gremmel</a>'
+        cardContent: ''
+    },
+    {
+        doctorName: 'Prof. Dr. Thomas Gremmel'
+        stationName: 'Facharzt für Innere Medizin und Angiologie Prof. Dr. Thomas Gremmel'
+        address: '1130 Wien, Amalienstraße 53A/4/22'
+        phoneNumber: '<a href="tel:+4369910459023">+43 699 104 59023</a><br>
+        <a href="tel:+4318769286">+43 (0)1 876 92 86</a>'
+        emailAddress: '<a href="mailto:thomas.gremmel@meduniwien.ac.at">thomas.gremmel@meduniwien.ac.at</a><br><a href="mailto:thomas.gremmel@gmx.at">thomas.gremmel@gmx.at</a>'
+        website: '<a href="https://www.meduniwien.ac.at/hp/n790-cardiopulmodis/supervisors/gremmel">www.meduniwien.ac.at/supervisors/gremmel</a>'
+        cardContent: ''
+    },
+    {
+        doctorName: 'Ao.Univ.-Prof. Dr. Erich Minar'
+        stationName: 'WIENER PRIVATKLINIK'
+        address: '1090 Wien, Pelikangasse 15'
+        phoneNumber: '<a href="tel:+431401802310">+43 (0)1 401 80 2310</a>'
+        emailAddress: '<a href="mailto:erich.minar@wpk.at">erich.minar@wpk.at</a>'
+        website: '<a href="https://www.gefaesserkrankung.at">www.gefaesserkrankung.at</a>'
+        cardContent: ''    
+    },
+    {
+        doctorName: 'Priv.-Doz. Dr. Schila Sabeti-Sandor'
+        stationName: 'Arzt / Facharzt für Innere Medizin'
+        address: '1180 Wien, Gentzgasse 137/8'
+        phoneNumber: '<a href="tel:+4314706389">+43 (0) 1 470 63 89</a>'
+        emailAddress: ''
+        website: ''
+        cardContent: ''
     },
     {
         doctorName: 'Univ.-Prof. Dr. Michael Gschwandtner'
@@ -409,15 +446,6 @@ wienData = [
         phoneNumber: '<a href="tel:+4314040046700">+43 1 40400 46 700</a>'
         emailAddress: '<a href="mailto:michael.gschwandtner@meduniwien.ac.at">michael.gschwandtner@meduniwien.ac.at</a>'
         website: '<a href="https://innere-med-2.meduniwien.ac.at/angiologie/">innere-med-2.meduniwien.ac.at/angiologie/</a>'
-        cardContent: ''
-    },
-    {
-        doctorName: 'Prof. Dr. Erich Minar'
-        stationName: '(Neue Wiener Privatklinik)'
-        address: '1090 Wien, Pelikangasse 15'
-        phoneNumber: '<a href="tel:+431401802310">+43 1 401 802310</a>'
-        emailAddress: '<a href="mailto:erich.minar@meduniwien.ac.at">erich.minar@meduniwien.ac.at</a>'
-        website: '<a href="https://www.gefaesserkrankung.at">www.gefaesserkrankung.at</a>'
         cardContent: ''
     },
     {
@@ -445,15 +473,6 @@ wienData = [
         phoneNumber: '<a href="tel:+431601224254">+43 1 60122 4254</a>'
         emailAddress: '<a href="mailto:GEF10-2@wgkk.at">GEF10-2@wgkk.at</a>'
         website: '<a href="https://www.wgkk.at">www.wgkk.at</a>'
-        cardContent: ''
-    },
-    {
-        doctorName: 'Prof. Dr. Thomas Gremmel'
-        stationName: 'Facharzt für Innere Medizin und Angiologie Prof. Dr. Thomas Gremmel'
-        address: '1130 Wien, Amalienstraße 53A/22'
-        phoneNumber: '<a href="tel:+4369910459023">+ 43 699 104 59023</a>'
-        emailAddress: '<a href="mailto:thomas.gremmel@meduniwien.ac.at">thomas.gremmel@meduniwien.ac.at</a>'
-        website: ''
         cardContent: ''
     },
     {
@@ -544,18 +563,4 @@ wienData = [
 ]
 
 ############################################################
-burgenlandData = []
-
-############################################################
-allData = 
-    vorarlberg: vorarlbergData
-    tirol: tirolData
-    salzburg: salzburgData
-    kaernten: kaerntenData
-    oberoesterreich: oberoesterreichData
-    steiermark: steiermarkData
-    niederoesterreich: niederoesterreichData
-    wien: wienData
-    burgenland: burgenlandData
-
-module.exports = allData
+export burgenland = []

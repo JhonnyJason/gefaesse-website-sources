@@ -1,31 +1,26 @@
-videodisplaymodule = {name: "videodisplaymodule"}
 ############################################################
-#region printLogFunctions
-log = (arg) ->
-    if allModules.debugmodule.modulesToDebug["videodisplaymodule"]?  then console.log "[videodisplaymodule]: " + arg
-    return
-ostr = (obj) -> JSON.stringify(obj, null, 4)
-olog = (obj) -> log "\n" + ostr(obj)
-print = (arg) -> console.log(arg)
+#region debug
+import { createLogFunctions } from "thingy-debug"
+{log, olog} = createLogFunctions("videodisplaymodule")
 #endregion
 
 ############################################################
-videodisplaymodule.initialize = ->
-    log "videodisplaymodule.initialize"
+export initialize = ->
+    log "initialize"
     if !videodisplay? then return
     
-    clickCatcher.addEventListener("click", videodisplaymodule.clear)
+    clickCatcher.addEventListener("click", clear)
     
     return
     
-videodisplaymodule.displayVideo = (src) ->
+############################################################
+export displayVideo = (src) ->
     videoElement.setAttribute("src", src)
     videodisplay.classList.add("shown")
     return
 
-videodisplaymodule.clear = ->
+############################################################
+export clear = ->
     videoElement.setAttribute("src", "")
     videodisplay.classList.remove("shown")
     return
-
-module.exports = videodisplaymodule

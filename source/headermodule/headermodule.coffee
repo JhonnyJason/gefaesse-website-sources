@@ -1,13 +1,11 @@
-headermodule = {name: "headermodule"}
 ############################################################
-#region printLogFunctions
-log = (arg) ->
-    if allModules.debugmodule.modulesToDebug["headermodule"]?  then console.log "[headermodule]: " + arg
-    return
-ostr = (obj) -> JSON.stringify(obj, null, 4)
-olog = (obj) -> log "\n" + ostr(obj)
-print = (arg) -> console.log(arg)
+#region debug
+import { createLogFunctions } from "thingy-debug"
+{log, olog} = createLogFunctions("headermodule")
 #endregion
+
+############################################################
+#region internal variables
 
 ############################################################
 v = null
@@ -23,10 +21,11 @@ ogiaLinkExpanded = false
 webinareLinkExpanded = false
 termineLinkExpanded = false
 
+#endregion
 
 ############################################################
-headermodule.initialize = ->
-    log "headermodule.initialize"
+export initialize = ->
+    log "initialize"
     v = allModules.vanillautilmodule
 
     kontaktLink.addEventListener("click", scrollToKontakt)
@@ -121,10 +120,8 @@ endLit = ->
 
 #endregion
 
-
 ############################################################
-#region exposedFunctions
-headermodule.collapseExpanded = ->
+export collapseExpanded = ->
 
     if ogiaLinkExpanded
         ogiaLinkExpanded = false
@@ -145,7 +142,3 @@ headermodule.collapseExpanded = ->
         webinareLink.blur()
 
     return
-
-#endregion
-
-module.exports = headermodule

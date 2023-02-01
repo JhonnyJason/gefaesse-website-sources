@@ -1,17 +1,15 @@
-import configmodule from "./configmodule"
-import debugmodule from "./debugmodule"
-import googlemapsmodule from "./googlemapsmodule"
-import headermodule from "./headermodule"
-import smoothscrolleffectmodule from "./smoothscrolleffectmodule"
-import statemodule from "./statemodule"
-import upbuttonmodule from "./upbuttonmodule"
-import vanillautilmodule from "./vanillautilmodule"
-import videodisplaymodule from "./videodisplaymodule"
+import * as configmodule from "./configmodule.js"
+import * as debugmodule from "./debugmodule.js"
+import * as headermodule from "./headermodule.js"
+import * as smoothscrolleffectmodule from "./smoothscrolleffectmodule.js"
+import * as statemodule from "./statemodule.js"
+import * as upbuttonmodule from "./upbuttonmodule.js"
+import * as vanillautilmodule from "./vanillautilmodule.js"
+import * as videodisplaymodule from "./videodisplaymodule.js"
 
 Modules = {
     configmodule,
     debugmodule,
-    googlemapsmodule,
     headermodule,
     smoothscrolleffectmodule,
     statemodule,

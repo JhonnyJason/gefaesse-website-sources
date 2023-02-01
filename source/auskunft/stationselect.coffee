@@ -1,21 +1,17 @@
-stationselectmodule = {name: "stationselectmodule"}
 ############################################################
-#region printLogFunctions
-log = (arg) ->
-    if allModules.debugmodule.modulesToDebug["stationselectmodule"]?  then console.log "[stationselectmodule]: " + arg
-    return
-ostr = (obj) -> JSON.stringify(obj, null, 4)
-olog = (obj) -> log "\n" + ostr(obj)
-print = (arg) -> console.log(arg)
+#region debug
+import { createLogFunctions } from "thingy-debug"
+{log, olog} = createLogFunctions("stationselect")
 #endregion
 
 ############################################################
-auskunftData = require("./auskunftdata")
-m = require("mustache")
+import m from "mustache"
 
 ############################################################
-state = null
-v = null
+import *  as auskunftData from "./auskunftdata.js"
+############################################################
+import * as state from "./statemodule.js"
+import * as v from "./vanillautilmodule.js"
 
 ############################################################
 detailCardTemplate = null
@@ -42,11 +38,8 @@ noSelectionHTML = """
 
 
 ############################################################
-stationselectmodule.initialize = ->
-    log "stationselectmodule.initialize"
-    state = allModules.statemodule
-    v = allModules.vanillautilmodule
-
+export initialize = ->
+    log "initialize"
     detailCardTemplate = informationDetailCardTemplate.innerHTML
     elementTemplate = stationElementTemplate.innerHTML
 
@@ -129,5 +122,3 @@ setDetailCard = (cardHTML, scroll = false) ->
     # patientenInformation.
     if scroll then v.scrollTo(patientenInformation)
     return
-
-module.exports = stationselectmodule

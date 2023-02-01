@@ -1,26 +1,21 @@
-bundeslandselectmodule = {name: "bundeslandselectmodule"}
 ############################################################
-#region printLogFunctions
-log = (arg) ->
-    if allModules.debugmodule.modulesToDebug["bundeslandselectmodule"]?  then console.log "[bundeslandselectmodule]: " + arg
-    return
-ostr = (obj) -> JSON.stringify(obj, null, 4)
-olog = (obj) -> log "\n" + ostr(obj)
-print = (arg) -> console.log(arg)
+#region debug
+import { createLogFunctions } from "thingy-debug"
+{log, olog} = createLogFunctions("bundeslandselect")
 #endregion
+
+############################################################
+import *  as state from "./statemodule.js"
 
 ############################################################
 defaultBundesland = "vorarlberg"
 
 ############################################################
 currentSelection = null
-state = null
 
 ############################################################
-bundeslandselectmodule.initialize = ->
-    log "bundeslandselectmodule.initialize"
-
-    state = allModules.statemodule
+export initialize = ->
+    log "initialize"
     stateSelection = state.get("currentBundesland")
     
     if stateSelection? then select(stateSelection)
@@ -108,6 +103,3 @@ select = (bundesland) ->
     state.save("currentBundesland", currentSelection)
     return
 
-
-
-module.exports = bundeslandselectmodule
