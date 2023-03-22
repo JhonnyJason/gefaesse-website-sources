@@ -16,6 +16,8 @@ cp sources/ressources/video/* output/video/
 cp sources/ressources/favicon/* output/
 cp sources/ressources/manifest/* output/
 
+cp sources/ressources/.htaccess output/
+
 cp sources/ressources/oegia_statuten.pdf output/
 cp sources/ressources/oegia_empfohlene_lernunterlagen.pdf output/
 cp sources/ressources/Beitrittsformular.pdf output/
