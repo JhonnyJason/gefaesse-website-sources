@@ -24,8 +24,6 @@ cp sources/ressources/Beitrittsformular.pdf output/
 cp sources/ressources/Datenschutzerklaerung.pdf output/
 cp sources/ressources/flyer_webinar_dez_9_21.pdf output/
 cp sources/ressources/esvm_2022.pdf output/
-cp sources/ressources/sommerakademie_2022.pdf output/
-cp sources/ressources/gerinnungstage_2022.pdf output/
 cp sources/ressources/thrombosedialog_2022.pdf output/
 cp sources/ressources/iua_course_2022.pdf output/
 cp sources/ressources/euro_thrombosis_2022.png output/
