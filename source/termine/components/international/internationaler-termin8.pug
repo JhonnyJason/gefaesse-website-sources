@@ -1,0 +1,17 @@
+//- extends ../termine/lokaler-termin-base.pug
+extends ../termine/termin-base.pug
+
+block picture 
+    img(src="/img/milan.webp" alt="ESVM Banner Milan")
+block title
+    | IX Congress of European Society of Vascular Medicine
+block location
+    | Milan, Italy
+block time
+    | 12.-14. October 2023
+block website 
+    a(href="https://esvm-congress.org/" target="_blank") www.esvm-congress.org
+block flyer 
+    a.download-button(href="/video/esvm-2023.mp4" target="_blank") 
+        svg: use(href="#svg-play-icon")
+        | Watch Trailer 
