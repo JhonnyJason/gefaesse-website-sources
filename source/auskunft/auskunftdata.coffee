@@ -542,10 +542,10 @@ export wien = [
         cardContent: ''
     },
     {
-        doctorName: 'Dr. med. Elisabeth Singer'
-        stationName: 'Praxis für Venenheilkunde'
-        address: '1190 Wien, Billrothstrasse 49a'
-        phoneNumber: '<a href="tel:+436506919779">+43 650 691 9779</a>'
+        doctorName: 'Dr. med. Lisa Singer'
+        stationName: 'FÄ Innere Medizin/Angiologie<br>Subspezialisierung Phlebologie'
+        address: '1180 Wien, Währinger Strasse 115/14'
+        phoneNumber: '<a href="tel:+4312350632">+43 1 235 0632</a>'
         emailAddress: ''
         website: '<a href="https://www.drsinger.at">www.drsinger.at</a>'
         cardContent: ''
