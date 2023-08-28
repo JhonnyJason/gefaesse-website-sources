@@ -27,6 +27,7 @@ ln -sf ../../sources/ressources/oegim_jahrestagung_2023.pdf .
 ln -sf ../../sources/ressources/gerinnungstage_2023.pdf .
 ln -sf ../../sources/ressources/sommerakademie_2023.pdf .
 ln -sf ../../sources/ressources/dga_kongress_2023.jpg .
+ln -sf ../../sources/ressources/hh_gefaesstag_2023.pdf .
 
 popd
 
