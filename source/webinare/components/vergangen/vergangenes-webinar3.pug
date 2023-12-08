@@ -1,12 +1,14 @@
 extends vergangenes-webinar-base.pug
+include video-mixin.pug
 
 block picture 
     img(src="/img/banner-webinar-dez-9-21.jpg" alt="Webinar Banner")
 block title
-    | Optimierung der Gefäßintervention mit neuen Therapieoptionen
+    | Arterielle und venöse Gefäßinterventionen - Therapieoptionen
 block time
-    | Donnerstag, 9. Dezember 2021, 17:30–19:00 Uhr CET
+    | 6. Dezember 2023 | 18:30-20:00 CET<br>
 block flyer 
-    a(href="/flyer_webinar_dez_9_21.pdf") Webinar Flyer 
+    a.download-button(href="/oegia_live_webinar_2023.pdf" target="_blank") Download Einladung 
 block videos
-    | todo
+    ul
+        +video("Gesamtes Webinar", "", "", "/video/full-webinar-dez-6-23.mp4")
