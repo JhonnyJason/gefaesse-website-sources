@@ -35,6 +35,6 @@ cp sources/ressources/sommerakademie_2023.pdf output/
 cp sources/ressources/hh_gefaesstag_2023.pdf output/
 cp sources/ressources/oegia_live_webinar_2023.pdf output/
 cp sources/ressources/dga_kongress_2024.pdf output/
-
+cp sources/ressources/stellenangebot_1.pdf output/
 
 echo 0
