@@ -30,6 +30,7 @@ ln -sf ../../sources/ressources/hh_gefaesstag_2023.pdf .
 ln -sf ../../sources/ressources/oegia_live_webinar_2023.pdf .
 ln -sf ../../sources/ressources/dga_kongress_2024.pdf .
 ln -sf ../../sources/ressources/stellenangebot_1.pdf
+ln -sf ../../sources/ressources/sommerakademie_2024.pdf .
 
 popd
 
