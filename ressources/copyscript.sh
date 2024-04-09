@@ -37,5 +37,6 @@ cp sources/ressources/oegia_live_webinar_2023.pdf output/
 cp sources/ressources/dga_kongress_2024.pdf output/
 cp sources/ressources/stellenangebot_1.pdf output/
 cp sources/ressources/sommerakademie_2024.pdf output/
+cp sources/ressources/avc_2024.pdf output/
 
 echo 0
