@@ -32,6 +32,10 @@ ln -sf ../../sources/ressources/dga_kongress_2024.pdf .
 ln -sf ../../sources/ressources/stellenangebot_1.pdf
 ln -sf ../../sources/ressources/sommerakademie_2024.pdf .
 ln -sf ../../sources/ressources/avc_2024.pdf .
+ln -sf ../../sources/ressources/gerinnungstage_2024.pdf .
+ln -sf ../../sources/ressources/oegim_jahrestagung_2024.pdf .
+ln -sf ../../sources/ressources/vascmed_2024.pdf .
+ln -sf ../../sources/ressources/eurothrombosis_2024.pdf .
 
 popd
 
