@@ -42,5 +42,6 @@ cp sources/ressources/gerinnungstage_2024.pdf output/
 cp sources/ressources/oegim_jahrestagung_2024.pdf output/
 cp sources/ressources/vascmed_2024.pdf output/
 cp sources/ressources/eurothrombosis_2024.pdf output/
+cp sources/ressources/hh_gefaesstag_2024.pdf output/
 
 echo 0
