@@ -1,0 +1,14 @@
+extends vergangenes-webinar-base.pug
+include video-mixin.pug
+
+block picture 
+    img(src="/img/bubbles.webp" alt="Webinar Banner")
+block title
+    | Modernes Lipidmanagement in der pAVK
+block time
+    | 6. Juni 2024 | 18:00-19:30 CET<br>
+//- block flyer 
+    a.download-button(href="/oegia_live_webinar_2023.pdf" target="_blank") Download Einladung 
+block videos
+    ul
+        +video("Gesamtes Webinar", "", "", "/video/full-webinar-jun-6-24.mp4")
