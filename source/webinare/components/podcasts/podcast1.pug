@@ -1,0 +1,10 @@
+extends podcast-base.pug
+include podcast-play-mixin.pug
+
+block picture 
+    img(src="/img/podcast1.jpg" alt="Podcast Representation Image")
+block title
+    | Cholesterinstoffwechsel und PAVK
+block links
+    +podcast-play("Podcast auf Spotify", "https://open.spotify.com/episode/4rpZJWA64gDonST2AtHVIU?si=14191dbf40e944b6")
+    +podcast-play("Podcast auf Apple Podcasts", "https://podcasts.apple.com/at/podcast/stethoskop-medizin-zum-nachh%C3%B6ren/id1712693568?i=1000663939117")

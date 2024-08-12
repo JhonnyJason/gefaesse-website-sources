@@ -1,0 +1,63 @@
+
+.podcast-entry
+    text-align: left
+    padding 20px
+    background-color cd-darkbackground
+    // border-bottom solid 2px cd-foreground
+    // margin-bottom 50px
+    display flex
+    gap: 60px
+
+    h2
+        padding-top 15px
+        padding-bottom: 10px
+        max-width 500px
+        font-size: 14pt
+        font-weight: bold
+        text-transform: uppercase
+        letter-spacing: 1.5pt
+        border-bottom: solid 2px
+        margin-bottom: 50px
+        letter-spacing: 1.2pt
+
+   
+    .podcast-picture
+        img
+            width 300px
+            object-fit: cover
+    .play-link
+        margin-top 15px
+        display flex
+        background-color white
+        padding 10px
+        border-radius 30px
+        align-items: center
+        gap 10px
+        font-size: 16px
+        svg
+            width 30px
+            height 30px    
+   
+@media screen and (max-width: 930px)
+    .podcast-entry
+        flex-direction: column
+        justify-content: center
+        align-items center
+    .podcast-picture
+        margin auto
+      
+@media screen and (max-width: 400px)
+    .podcast-entry
+        h2 
+            word-break: break-all
+            font-size: 14px
+        
+        .podcast-picture
+            img
+                width 200px
+
+        .play-link
+            font-size: 12px
+            svg
+                width 25px
+                height 25px    

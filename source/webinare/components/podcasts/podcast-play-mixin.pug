@@ -1,0 +1,6 @@
+mixin podcast-play(label, url)
+    li.podcast-play
+        a(href=url).play-link
+            .play-icon: svg(): use(href="#svg-play-icon")
+            =label 
+        
