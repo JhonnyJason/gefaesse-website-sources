@@ -43,5 +43,6 @@ cp sources/ressources/oegim_jahrestagung_2024.pdf output/
 cp sources/ressources/vascmed_2024.pdf output/
 cp sources/ressources/eurothrombosis_2024.pdf output/
 cp sources/ressources/hh_gefaesstag_2024.pdf output/
+cp sources/ressources/podcast_esc2024_pavk.webp output/
 
 echo 0

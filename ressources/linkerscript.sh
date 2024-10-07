@@ -37,6 +37,7 @@ ln -sf ../../sources/ressources/oegim_jahrestagung_2024.pdf .
 ln -sf ../../sources/ressources/vascmed_2024.pdf .
 ln -sf ../../sources/ressources/eurothrombosis_2024.pdf .
 ln -sf ../../sources/ressources/hh_gefaesstag_2024.pdf .
+ln -sf ../../sources/ressources/podcast_esc2024_pavk.webp .
 
 popd
 
