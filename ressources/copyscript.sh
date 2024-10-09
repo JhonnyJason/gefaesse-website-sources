@@ -44,5 +44,6 @@ cp sources/ressources/vascmed_2024.pdf output/
 cp sources/ressources/eurothrombosis_2024.pdf output/
 cp sources/ressources/hh_gefaesstag_2024.pdf output/
 cp sources/ressources/podcast_esc2024_pavk.webp output/
+cp sources/ressources/vascular_medicine_update.pdf output/
 
 echo 0
