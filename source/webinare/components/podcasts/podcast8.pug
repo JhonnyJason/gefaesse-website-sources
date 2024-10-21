@@ -1,0 +1,11 @@
+extends podcast-base.pug
+include podcast-play-mixin.pug
+
+block picture 
+    img(src="/img/basiswissen_angiologie_2.webp" alt="Podcast Representation Image")
+block title
+    | Thrombose: Akut- & Langzeit-Behandlung
+block links
+    +podcast-play("Podcast auf Spotify", "https://open.spotify.com/episode/3Lf2P8KtA4kBKZIM420pq6")
+    +podcast-play("Podcast auf Apple Podcasts", "https://podcasts.apple.com/at/podcast/thrombose-akut-langzeit-behandlung/id1712693568?i=1000632760108")
+    +podcast-play("Podcast auf Buzzsprout", "https://www.buzzsprout.com/2254118/episodes/13827362")
