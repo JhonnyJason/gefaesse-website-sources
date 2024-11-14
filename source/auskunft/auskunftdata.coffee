@@ -477,10 +477,10 @@ export wien = [
     },
     {
         doctorName: ''
-        stationName: 'Angiologie Hanuschkrankenhaus<br>angiologisches Sekretariat'
+        stationName: 'Angiologie Hanusch-Krankenhaus'
         address: '1140 Wien, Heinrich Collinstrasse 30'
         phoneNumber: '<a href="tel:+431910218611">+43 1 910 218 611</a>'
-        emailAddress: '<a href="mailto:petra.geritz@wgkk.at">petra.geritz@wgkk.at</a>'
+        emailAddress: '<a href="mailto:hkh.angiologische.amb@oegk.at">hkh.angiologische.amb@oegk.at</a>'
         website: ''
         cardContent: ''
     },
@@ -552,11 +552,20 @@ export wien = [
     },
     {
         doctorName: 'Dr. Gerald Schnürer'
-        stationName: 'Schnürer & Fritsch Gruppenpraxis für Innere Medizin'
+        stationName: 'Schnürer & Schieder Gruppenpraxis für Innere Medizin'
         address: '1230 Wien, Geßlgasse 19/1'
         phoneNumber: '<a href="tel:+43188813790">+ 43 1 888 13790</a>'
         emailAddress: '<a href="mailto:office@kardio23.at">office@kardio23.at</a>'
         website: '<a href="https://www.kardio23.at">www.kardio23.at</a>'
+        cardContent: ''
+    },
+    {
+        doctorName: 'Univ. Prof. Dr. Martin Werner'
+        stationName: 'Wahlarztordination Dr. Martin Werner'
+        address: '1190 Wien, Heiligenstädter Strasse 46-48; 1. Stock'
+        phoneNumber: '<a href="tel:+431360668000">+43 1 360 66 – 8000</a>'
+        emailAddress: '<a href="mailto:office@drwerner.wien">office@drwerner.wien</a>'
+        website: '<a href="https://www.drwerner.wien/">https://www.drwerner.wien/</a>'
         cardContent: ''
     }
 
