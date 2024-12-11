@@ -23,12 +23,12 @@ export vorarlberg = [
 ############################################################
 export tirol = [
     {
-        doctorName: 'Ao.Univ.-Prof. Dr. Peter Marschang'
-        stationName: 'Universitätsklinik für Innere Medizin III (Kardiologie und Angiologie)'
-        address: '6020 Innsbruck, Anichstrass 35'
-        phoneNumber: '<a href="tel:+4351250481414">+43 5125 048 1414</a>'
-        emailAddress: '<a href="mailto:Peter.Marschang@i-med.ac.at">Peter.Marschang@i-med.ac.at</a>'
-        website: ''
+        doctorName: 'Priv. Doz. Dr. Markus Theurl, Ph.D.<br>Prof. Dr. Rudolf Kirchmair<br>FÄ Dr. Maria Noflatscher, Ph.D.'
+        stationName: 'Medizinische Universität Innsbruck<br>Universitätsklinik für Innere Medizin III<br>Kardiologe und Angiologie'
+        address: 'Anichstrass 35<br>6020 Innsbruck'
+        phoneNumber: '<a href="tel:+435050423268">+43 (0) 50 504-23268</a>'
+        emailAddress: ''
+        website: 'https://inneremed3.tirol-kliniken.at/page.cfm?vpath=index'
         cardContent: ''
     },
     {
