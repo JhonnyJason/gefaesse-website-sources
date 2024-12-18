@@ -3,7 +3,7 @@ export vorarlberg = [
     {
         doctorName: 'Dr. Elmar Studer'
         stationName: ''
-        address: '6700 Bludenz, Bahnhofplatz 1a'
+        address: 'Bahnhofplatz 1a<br>6700 Bludenz'
         phoneNumber: '<a href="tel:0555269096">05552 690 96</a>'
         emailAddress: ''
         website: ''
@@ -12,9 +12,18 @@ export vorarlberg = [
     {
         doctorName: 'Dr. Rainer Mathies'
         stationName: 'Ordination/LKH Feldkirch'
-        address: '6800 Feldkirch, Carinagasse 47'
+        address: 'Carinagasse 47<br>6800 Feldkirch '
         phoneNumber: '<a href="tel:+4355223034640">+43 552 2303 4640</a>'
         emailAddress: '<a href="mailto:rainer.mathies@lkhf.at">rainer.mathies@lkhf.at</a>'
+        website: ''
+        cardContent: ''
+    },
+    {
+        doctorName: 'OA Dr. Fabian Schmid'
+        stationName: 'Ordination/LKH Feldkirch'
+        address: 'Innere Medizin I, Carinagasse 47<br> 6800 Feldkirch'
+        phoneNumber: '<a href="tel:+4355223030">+43 5522 303-0 </a>'
+        emailAddress: '<a href="mailto:Fabian.Schmid@lkhf.at">Fabian.Schmid@lkhf.at</a>'
         website: ''
         cardContent: ''
     }
