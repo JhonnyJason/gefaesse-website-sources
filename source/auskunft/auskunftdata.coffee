@@ -82,48 +82,6 @@ export oberoesterreich = [
 ############################################################
 export steiermark = [
     {
-        doctorName: 'Univ. Prof. Dr. Ernst Pilger'
-        stationName: 'Kontaktperson Frau Andrea Schober'
-        address: '8010 Graz, Rosenberggasse 1'
-        phoneNumber: '<a href="tel:+43316830193">+43 316 830 193</a>'
-        emailAddress: '<a href="mailto:ordination@pilger-pilger.at">ordination@pilger-pilger.at</a>'
-        website: '<a href="https://www.pilger-pilger.at">www.pilger-pilger.at</a>'
-        cardContent: ''
-    },
-    {
-        doctorName: 'Prof. Rabl'
-        stationName: 'Privatordination Prof. Rabl'
-        address: '8700 Leoben, Peter Tunner Strasse 4/1'
-        phoneNumber: '<a href="tel:06765850693">0676 5850 693</a>'
-        emailAddress: '<a href="mailto:rabl@inode.at">rabl@inode.at</a>'
-        website: ''
-        cardContent: '''
-            <p class="detail-owner">Prof. Rabl</p>
-            <p class="detail-name">
-            Privatordination Prof. Rabl
-            </p>
-            <p>
-            8700 Leoben, Peter Tunner Strasse 4/1<br>
-            <a href="tel:06765850693">0676 5850 693</a><br>
-            <a href="mailto:rabl@inode.at">rabl@inode.at</a>
-            </p>
-            <p>
-            Und<br>
-            8010 Graz, Körblergasse 42<br>
-            Tel: <a href="tel:03163600997">0316 3600 997</a>
-            </p>
-        '''
-    },
-    {
-        doctorName: 'PD Dr. Franz Hafner'
-        stationName: 'Facharzt für Innere Medizin und Angiologie'
-        address: '8010 Graz, Elisabethstraße 54'
-        phoneNumber: '<a href="tel:066488188568">066488188568</a>'
-        emailAddress: '<a href="mailto:hafner@angiologe-graz.at">hafner@angiologe-graz.at</a>'
-        website: '<a href="https://www.angiologe-graz.at">www.angiologe-graz.at</a>'
-        cardContent: ''
-    },
-    {
         doctorName: 'Dr. Andreas Dorr'
         stationName: ''
         address: '8010 Graz, Hugo-Wolf-Gasse 6a'
