@@ -28,7 +28,6 @@ ln -sf ../../sources/ressources/gerinnungstage_2023.pdf .
 ln -sf ../../sources/ressources/sommerakademie_2023.pdf .
 ln -sf ../../sources/ressources/hh_gefaesstag_2023.pdf .
 ln -sf ../../sources/ressources/oegia_live_webinar_2023.pdf .
-ln -sf ../../sources/ressources/dga_kongress_2024.pdf .
 ln -sf ../../sources/ressources/stellenangebot_1.pdf
 ln -sf ../../sources/ressources/sommerakademie_2024.pdf .
 ln -sf ../../sources/ressources/avc_2024.pdf .
@@ -36,9 +35,10 @@ ln -sf ../../sources/ressources/gerinnungstage_2024.pdf .
 ln -sf ../../sources/ressources/oegim_jahrestagung_2024.pdf .
 ln -sf ../../sources/ressources/vascmed_2024.pdf .
 ln -sf ../../sources/ressources/eurothrombosis_2024.pdf .
-ln -sf ../../sources/ressources/hh_gefaesstag_2024.pdf .
 ln -sf ../../sources/ressources/podcast_esc2024_pavk.webp .
 ln -sf ../../sources/ressources/vascular_medicine_update.pdf .
+ln -sf ../../sources/ressources/dga_kongress_2025.pdf .
+ln -sf ../../sources/ressources/hh_gefaesstag_2025.pdf .
 
 popd
 

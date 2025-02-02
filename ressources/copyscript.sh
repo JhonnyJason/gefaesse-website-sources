@@ -34,7 +34,6 @@ cp sources/ressources/gerinnungstage_2023.pdf output/
 cp sources/ressources/sommerakademie_2023.pdf output/
 cp sources/ressources/hh_gefaesstag_2023.pdf output/
 cp sources/ressources/oegia_live_webinar_2023.pdf output/
-cp sources/ressources/dga_kongress_2024.pdf output/
 cp sources/ressources/stellenangebot_1.pdf output/
 cp sources/ressources/sommerakademie_2024.pdf output/
 cp sources/ressources/avc_2024.pdf output/
@@ -42,8 +41,9 @@ cp sources/ressources/gerinnungstage_2024.pdf output/
 cp sources/ressources/oegim_jahrestagung_2024.pdf output/
 cp sources/ressources/vascmed_2024.pdf output/
 cp sources/ressources/eurothrombosis_2024.pdf output/
-cp sources/ressources/hh_gefaesstag_2024.pdf output/
 cp sources/ressources/podcast_esc2024_pavk.webp output/
 cp sources/ressources/vascular_medicine_update.pdf output/
+cp sources/ressources/dga_kongress_2025.pdf output/
+cp sources/ressources/hh_gefaesstag_2025.pdf output/
 
 echo 0
