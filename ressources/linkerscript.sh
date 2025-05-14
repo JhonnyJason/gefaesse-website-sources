@@ -21,7 +21,6 @@ ln -sf ../../sources/ressources/esvm_2022.pdf .
 ln -sf ../../sources/ressources/thrombosedialog_2022.pdf .
 ln -sf ../../sources/ressources/iua_course_2022.pdf .
 ln -sf ../../sources/ressources/euro_thrombosis_2022.png .
-ln -sf ../../sources/ressources/dga_summer_school_2023.pdf .
 ln -sf ../../sources/ressources/ddg_herbsttagung.png .
 ln -sf ../../sources/ressources/oegim_jahrestagung_2023.pdf .
 ln -sf ../../sources/ressources/gerinnungstage_2023.pdf .
@@ -39,6 +38,7 @@ ln -sf ../../sources/ressources/podcast_esc2024_pavk.webp .
 ln -sf ../../sources/ressources/vascular_medicine_update.pdf .
 ln -sf ../../sources/ressources/dga_kongress_2025.pdf .
 ln -sf ../../sources/ressources/hh_gefaesstag_2025.pdf .
+ln -sf ../../sources/ressources/dga_summer_school_2025.pdf .
 
 popd
 

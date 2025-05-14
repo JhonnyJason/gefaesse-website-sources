@@ -27,7 +27,6 @@ cp sources/ressources/esvm_2022.pdf output/
 cp sources/ressources/thrombosedialog_2022.pdf output/
 cp sources/ressources/iua_course_2022.pdf output/
 cp sources/ressources/euro_thrombosis_2022.png output/
-cp sources/ressources/dga_summer_school_2023.pdf output/
 cp sources/ressources/ddg_herbsttagung.png output/
 cp sources/ressources/oegim_jahrestagung_2023.pdf output/
 cp sources/ressources/gerinnungstage_2023.pdf output/
@@ -45,5 +44,6 @@ cp sources/ressources/podcast_esc2024_pavk.webp output/
 cp sources/ressources/vascular_medicine_update.pdf output/
 cp sources/ressources/dga_kongress_2025.pdf output/
 cp sources/ressources/hh_gefaesstag_2025.pdf output/
+cp sources/ressources/dga_summer_school_2025.pdf output/
 
 echo 0
