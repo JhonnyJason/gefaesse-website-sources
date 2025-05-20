@@ -1,0 +1,14 @@
+extends vergangenes-webinar-base.pug
+include video-mixin.pug
+
+block picture 
+    img(src="/img/study_medicine.webp" alt="Webinar Banner")
+block title
+    | Fortbildung Gefässmedizin<br>Vascular Medicine Update
+block time
+    | September 16 - January 27 (weekly lectures)<br>
+block flyer 
+    a.download-button(href="/vascular_medicine_update.pdf" target="_blank") Download Flyer 
+//- block videos
+//-     ul
+//-         +video("Gesamtes Webinar", "", "", "/video/full-webinar-jun-6-24.mp4")

@@ -46,5 +46,7 @@ cp sources/ressources/dga_kongress_2025.pdf output/
 cp sources/ressources/hh_gefaesstag_2025.pdf output/
 cp sources/ressources/dga_summer_school_2025.pdf output/
 cp sources/ressources/gerinnungstage_2025.pdf output/
+cp sources/ressources/hyperlipidemia.pdf output/
+
 
 echo 0

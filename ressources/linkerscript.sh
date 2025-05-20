@@ -40,6 +40,7 @@ ln -sf ../../sources/ressources/dga_kongress_2025.pdf .
 ln -sf ../../sources/ressources/hh_gefaesstag_2025.pdf .
 ln -sf ../../sources/ressources/dga_summer_school_2025.pdf .
 ln -sf ../../sources/ressources/gerinnungstage_2025.pdf .
+ln -sf ../../sources/ressources/hyperlipidemia.pdf .
 
 popd
 
