@@ -1,13 +1,16 @@
 
 .podcast-entry
-    text-align: left
+    display block
     padding 20px
     background-color cd-darkbackground
+    margin-bottom 50px
+
+.top
+    text-align: left
     // border-bottom solid 2px cd-foreground
     // margin-bottom 50px
     display flex
     gap: 60px
-    margin-bottom 50px
 
     h2
         padding-top 15px
@@ -55,8 +58,18 @@
             width 220px
             box-sizing: border-box
 
+.sponsors
+    display flex
+    justify-content: right
+    align-items: flex-end
+    gap 20px
+    .sponsor-logo
+        height 60px
+    label
+        // font-weight bold
+        padding-bottom 5px
 @media screen and (max-width: 930px)
-    .podcast-entry
+    .top
         flex-direction: column
         justify-content: center
         align-items center
@@ -72,7 +85,7 @@
         margin auto
       
 @media screen and (max-width: 400px)
-    .podcast-entry
+    .top
         h2 
             word-break: break-all
             font-size: 14px
