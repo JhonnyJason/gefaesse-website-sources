@@ -47,6 +47,8 @@ cp sources/ressources/hh_gefaesstag_2025.pdf output/
 cp sources/ressources/dga_summer_school_2025.pdf output/
 cp sources/ressources/gerinnungstage_2025.pdf output/
 cp sources/ressources/hyperlipidemia.pdf output/
+cp sources/ressources/amp_europe_2025.jpg output/
+
 
 
 echo 0
