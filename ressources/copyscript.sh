@@ -48,6 +48,8 @@ cp sources/ressources/dga_summer_school_2025.pdf output/
 cp sources/ressources/gerinnungstage_2025.pdf output/
 cp sources/ressources/hyperlipidemia.pdf output/
 cp sources/ressources/amp_europe_2025.jpg output/
+cp sources/ressources/podcast-flyer-glp1-ra.pdf output/
+cp sources/ressources/podcast-gerinnungstage-2025.pdf output/
 
 
 
