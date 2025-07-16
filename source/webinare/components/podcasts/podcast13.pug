@@ -1,0 +1,12 @@
+extends podcast-base.pug
+include podcast-play-mixin.pug
+include sponsor-mixin.pug
+
+block picture 
+    img(src="/img/congress_radio_gg_2025.webp" alt="Podcast Representation Image")
+block title
+    | Congress Radio - Grazer Gefäß- und Gerinnungstage (Teil 2)
+block links
+    +podcast-play("Podcast auf Spotify", "https://open.spotify.com/episode/3VlP2Q2yh3drkYt7MDVZmn")
+    +podcast-play("Podcast auf Apple Podcasts", "https://podcasts.apple.com/at/podcast/congress-radio-grazer-gef%C3%A4%C3%9F-und-gerinnungstage-teil-2/id1712693568?i=1000714928926")
+    +podcast-play("Podcast auf Buzzsprout", "https://www.buzzsprout.com/2254118/episodes/17412628-congress-radio-grazer-gefass-und-gerinnungstage-teil-2")
