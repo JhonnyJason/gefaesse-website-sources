@@ -44,6 +44,7 @@ ln -sf ../../sources/ressources/hyperlipidemia.pdf .
 ln -sf ../../sources/ressources/amp_europe_2025.jpg .
 ln -sf ../../sources/ressources/podcast-flyer-glp1-ra.pdf .
 ln -sf ../../sources/ressources/podcast-gerinnungstage-2025.pdf .
+ln -sf ../../sources/ressources/esvm_2026.pdf .
 
 popd
 
