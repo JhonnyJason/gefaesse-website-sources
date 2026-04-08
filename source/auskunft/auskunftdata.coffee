@@ -534,6 +534,15 @@ export wien = [
         emailAddress: '<a href="mailto:office@drwerner.wien">office@drwerner.wien</a>'
         website: '<a href="https://www.drwerner.wien/">https://www.drwerner.wien/</a>'
         cardContent: ''
+    },
+    {
+        doctorName: 'Dr. Farangiz Mukhtashova-Müller'
+        stationName: 'Wahlarztordination für Innere Medizin und Gefäßmedizin'
+        address: '1080 Wien, Bennogasse 24/7'
+        phoneNumber: '<a href="tel:+431403201111">+43 1 40 320 1111</a>'
+        emailAddress: '<a href="mailto:info@g-med.at">info@g-med.at</a>'
+        website: '<a href="https://www.g-med.at/">https://www.g-med.at/</a>'
+        cardContent: ''
     }
 
 ]
