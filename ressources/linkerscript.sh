@@ -47,6 +47,7 @@ ln -sf ../../sources/ressources/podcast-gerinnungstage-2025.pdf .
 ln -sf ../../sources/ressources/esvm_2026.pdf .
 ln -sf ../../sources/ressources/gerinnungstage_2026.pdf .
 ln -sf ../../sources/ressources/dga_summer_school_2026.pdf .
+ln -sf ../../sources/ressources/stellenangebot_2.pdf .
 
 popd
 

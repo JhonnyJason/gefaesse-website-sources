@@ -53,6 +53,7 @@ cp sources/ressources/podcast-gerinnungstage-2025.pdf output/
 cp sources/ressources/esvm_2026.pdf output/
 cp sources/ressources/gerinnungstage_2026.pdf output/
 cp sources/ressources/dga_summer_school_2026.pdf output/
+cp sources/ressources/stellenangebot_2.pdf output/
 
 
 
