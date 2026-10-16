@@ -49,6 +49,7 @@ ln -sf ../../sources/ressources/gerinnungstage_2026.pdf .
 ln -sf ../../sources/ressources/dga_summer_school_2026.pdf .
 ln -sf ../../sources/ressources/stellenangebot_2.pdf .
 ln -sf ../../sources/ressources/dga_kongress_2026.pdf .
+ln -sf ../../sources/ressources/phlebologie_1.pdf .
 
 popd
 

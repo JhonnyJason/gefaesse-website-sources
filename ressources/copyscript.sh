@@ -55,7 +55,6 @@ cp sources/ressources/gerinnungstage_2026.pdf output/
 cp sources/ressources/dga_summer_school_2026.pdf output/
 cp sources/ressources/stellenangebot_2.pdf output/
 cp sources/ressources/dga_kongress_2026.pdf output/
-
-
+cp sources/ressources/phlebologie_1.pdf output/
 
 echo 0
